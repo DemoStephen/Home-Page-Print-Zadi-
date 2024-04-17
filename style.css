@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  padding: 0.1rem 10%;
+  width: 100%;
+  z-index: 1;
+  color: rgba(35, 146, 236, 1);
+}
+#company-logo {
+  width: 18%;
+  text-align: left;
+}
+#company-logo img {
+  width: 90%;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+#navigation .about {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 5px;
+}
+.about li {
+  margin-right: 0.5rem;
+  padding: 5px 0px;
+}
+.about li a {
+  text-decoration: none;
+  color: #616161;
+  padding: 10px 5px;
+}
+#navigation .about li a:hover {
+  color: white;
+  background-color: rgba(0, 18, 52, 1);
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+#purple-div {
+  background-color: rgba(0, 18, 52, 1);
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#purple-div a:hover {
+  background-color: rgba(35, 146, 236, 1);
+  color: rgba(0, 18, 52, 1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.5s ease;
+}
+#purple-div a:hover .fa-solid {
+  color: rgba(0, 18, 52, 1);
+}
+#purple-div a:hover span {
+  color: rgba(0, 18, 52, 1);
+}
+#purple-div a {
+  text-decoration: none;
+  align-content: center;
+}
+.purple-div-bg {
+  display: flex;
+  flex-direction: row;
+}
+.purple-div-bg .fa-solid {
+  color: white;
+  font-size: 2rem;
+  padding: 20px 10px;
+}
+.purple-div-bg span {
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.nav-b {
+  text-decoration: none;
+  width: 10%;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+.nav-b .fa-solid {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+.nav-b .fa-solid:hover {
+  color: rgba(0, 18, 52, 1);
+  transition: 0.5s ease;
+}
+.nav-b:hover .drop-down {
+  display: block;
+  transition: 5s ease;
+}
+.drop-down {
+  list-style: none;
+  position: absolute;
+  padding: 15px;
+  width: 150px;
+  display: none;
+}
+.drop-down a {
+  text-decoration: none;
+  color: rgba(0, 18, 52, 1);
+  font-weight: 600;
+}
+.drop-down a .sec:hover {
+  background-color: rgba(0, 18, 52, 1);
+  color: white;
+  transition: 0.5s ease;
+}
+.drop-down a .sec {
+  padding: 10px;
+  background-color: #616161;
+  border-bottom: 2px solid white;
+}
+
+.crazy-bill {
+  background-image: url("image/illlustration1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 600;
+  font-size: 36px;
+}
+.section-one-text {
+  padding-top: 30rem;
+  padding-right: 5%;
+  justify-content: end;
+  color: white;
+  text-align: right;
+  width: 100%;
+  font-size: 32px;
+}
+
+#bill {
+  font-size: 64px;
+  font-weight: 500;
+  color: rgba(255, 153, 51, 1);
+}
+#section-one-icon {
+  display: flex;
+  align-content: end;
+  font-size: 16px;
+  justify-content: end;
+  margin-right: 5%;
+}
+#section-one-icon a {
+  margin: 50px 5px;
+  text-decoration: none;
+  color: white;
+}
+.sec-one-icons {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.search {
+  background-color: rgba(255, 153, 51, 1);
+
+  padding: 2% 5% 0px 5%;
+}
+#for-printer {
+  background-image: url("image/illustration2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.search h2 {
+  font-size: 32px;
+  width: 32%;
+}
+#all-products {
+  width: 40%;
+  padding-bottom: 10%;
+  padding-top: 1%;
+}
+#all-products input {
+  margin: 10px 0px;
+  width: 90%;
+  padding: 17px;
+  padding-left: 20px;
+  border-radius: 50px;
+  border: none;
+  font-style: italic;
+}
+#all-products button {
+  background-color: rgba(35, 146, 236, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-content: center;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-left: -10%;
+}
+.products {
+  display: flex;
+  background-color: rgba(237, 237, 237, 1);
+  flex-direction: column;
+  align-items: center;
+}
+#products-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 18px;
+  margin: 50px 0px;
+}
+.a4-brochure {
+  background-color: white;
+  border-radius: 5px;
+}
+.a4-brochure:hover {
+  box-shadow: 0px 0px 10px rgba(42, 40, 40, 0.3);
+}
+.product-image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.product-image:hover img {
+  filter: brightness(110%);
+  transition: 0.4s;
+}
+.product-image img {
+  width: 100%;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.product-information {
+  padding: 5%;
+}
+.product-name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgba(35, 146, 236, 1);
+}
+.product-discription {
+  font-size: 11px;
+  line-height: 16.5px;
+  width: 60%;
+}
+.low {
+  padding-top: 15px;
+}
+.product-price {
+  font-weight: 700;
+  font-size: 20px;
+}
+.customers {
+  border-top: 3px solid rgba(237, 237, 237, 1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+.customers .fa-solid {
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  width: 20%;
+  color: rgba(153, 153, 153, 1);
+}
+.customers .fa-solid:hover {
+  color: red;
+  transition: 1s;
+}
+.customers a {
+  width: 60%;
+  text-decoration: none;
+  color: rgba(153, 153, 153, 1);
+  font-weight: 700;
+}
+.customers a div:hover {
+  background-color: rgba(255, 0, 0, 1);
+  color: white;
+  transition: 0.5s;
+}
+.customers div {
+  padding: 10px;
+}
+#see-more-items {
+  margin-bottom: 50px;
+}
+#see-more-items button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(51, 102, 153, 1);
+  background: none;
+  border: 2px solid rgba(156, 156, 156, 1);
+  cursor: pointer;
+}
+#see-more-items:hover button {
+  background-color: rgba(51, 102, 153, 1);
+  border: 2px solid rgba(51, 102, 153, 1);
+  color: white;
+}
+.quality-prints {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#speedy-quality {
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 0px 10%;
+}
+.prints-info {
+  display: flex;
+}
+.quality-illustration-information {
+  width: 50%;
+  padding: 4%;
+}
+.quality-illustration-information p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.quality-illustration-information .info {
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 20px;
+  margin-top: -15%;
+}
+.red-bg {
+  background-color: red;
+}
+
+.quality-illustration-information i {
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  margin-left: -15%;
+  background-color: black;
+  padding: 5px;
+}
+.red-bg i {
+  background-color: red;
+}
+#quality-illustration-information1 {
+  background-image: url("https://s3-alpha-sig.figma.com/img/93e3/dfe8/df441e04dc5750fff3d0e28bad02c414?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dmx4RSbqaflt4jvUK-4WeplMzV-wFF~yxmFgYqtw2C8WijPYCnZGFDDwLknsFeL8mdG3393VvL-zIqcrO2z4D1WjKpHg7ptgbsTKS9bQTMsTHw4MbMvxjJ~tSjR1OWew8liO5a9Q0dBHrHPQDFY4MizM5vXHN4cAYTjYkYP82d9a2Vto4~pDkQ8Zfq7Sefut8vyUuFd85wufDz9tGf0ONduONhUtxzGdsjQ0nwJmzsifTPyQvEyz549NLBfsNGXfm663cODvRx3RFmU-thggbOAD~xvyVFXEINtdbbLjnrtmP~zR92k4VUcHPuTIG8rzVb4~5dy7o88CCwaQAzRsLA__");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#quality-illustration-information2 {
+  background-image: url("https://s3-alpha-sig.figma.com/img/b999/1e95/6b7f589ae5ddf6544711a514dfbca083?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RAJEuzbDk58DCyOuflajAq7Q-jixE3QVBLV33Wy4SJU8igwp84Wu4XHH0BL2hy3WWL~7v2aWjbK6qxIyMtInyvY28i2knnVpuPEyAlRerl6t5mGYxXUFQPOFBaidwq6rQov7d65AxYVflXzQSCNu0yRiEWZUZabbQdh~3CuMo82sEpYnKM7MFVnZhdo6Emd9lNFV1Q0AKKil6kB4~82eAE2OSFqXjIfg229za-u32L2B9IcxLwyAiPHZzJgUjQHwQi4TrNCp2ielBK5Pzny13N~khl7EJNPPKYkFgAb63jEWSj-rjSBXfEt5UtKDqfSQdRViG9lYmrSaflP6YelmxQ__");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+.trusted-brand {
+  padding: 2% 10%;
+}
+.trusted-brand h2 {
+  text-align: center;
+  font-size: 32px;
+  color: rgba(39, 76, 144, 1);
+}
+.trusted-brand img {
+  width: 100%;
+  padding: 25px 0px;
+}
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.company-information {
+  display: flex;
+  padding: 1% 10%;
+}
+.company-sections {
+  width: 100%;
+}
+.black {
+  color: black;
+}
+.footer-titles {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.company-sections a {
+  text-decoration: none;
+  color: rgba(116, 116, 116, 1);
+  margin-bottom: 2px;
+  width: 80%;
+}
+.company-sections a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.social-media {
+  margin-top: 40px;
+}
+.social-media a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+.social-media a i {
+  font-size: 20px;
+  color: white;
+}
+.company-information div img {
+  width: 40%;
+}
+.printzadi-para {
+  width: 90%;
+  font-size: 13px;
+  padding-top: 10px;
+}
+.copyright {
+  padding: 2% 10%;
+  text-align: center;
+  font-size: 15px;
+}
+.copyright p {
+  padding: 10px;
+}
