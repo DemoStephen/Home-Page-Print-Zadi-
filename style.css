@@ -19,7 +19,8 @@ nav {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   background-color: white;
   padding: 0.1rem 10%;
@@ -68,7 +69,7 @@ nav {
   display: flex;
   border-radius: 0px 0px 10px 10px;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: -10px 0px 10px 0px;
   align-items: center;
 }
 #purple-div a:hover {
@@ -120,7 +121,7 @@ nav {
 }
 .nav-b:hover .drop-down {
   display: block;
-  transition: 5s ease;
+  transition: 25s ease;
 }
 .drop-down {
   list-style: none;
@@ -149,92 +150,108 @@ nav {
   background-image: url("image/illlustration1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   font-weight: 600;
-  font-size: 36px;
-}
-.section-one-text {
-  padding-top: 30rem;
-  padding-right: 5%;
-  justify-content: end;
-  color: white;
+  font-size: 2rem;
+  overflow: hidden;
   text-align: right;
-  width: 100%;
-  font-size: 32px;
 }
 
+.section-one-text {
+  justify-content: end;
+  color: white;
+  margin: 25rem 7rem 5rem 0rem;
+  font-size: 2rem;
+}
+.production-rate {
+  font-weight: 700;
+  text-decoration: underline;
+}
+#arrow {
+  width: 6.87rem;
+  margin: 0px 25rem 0rem 0rem;
+}
 #bill {
-  font-size: 64px;
+  font-size: 4.75rem;
   font-weight: 500;
   color: rgba(255, 153, 51, 1);
 }
 #section-one-icon {
   display: flex;
   align-content: end;
-  font-size: 16px;
+  font-size: 1rem;
   justify-content: end;
-  margin-right: 5%;
+  margin: 1rem 0rem 0rem 0rem;
 }
 #section-one-icon a {
-  margin: 50px 5px;
   text-decoration: none;
   color: white;
+  margin: 1rem;
 }
 .sec-one-icons {
-  width: 100%;
-  padding: 10px;
   text-align: center;
+
+  padding: 5px;
 }
 .search {
   background-color: rgba(255, 153, 51, 1);
-
-  padding: 2% 5% 0px 5%;
+  padding: 2rem 5% 0px 5%;
 }
 #for-printer {
   background-image: url("image/illustration2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  overflow: hidden;
 }
 .search h2 {
-  font-size: 32px;
+  font-size: 2rem;
   width: 32%;
 }
 #all-products {
   width: 40%;
-  padding-bottom: 10%;
-  padding-top: 1%;
+  margin-bottom: 10%;
+  padding: 1%;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
 }
 #all-products input {
-  margin: 10px 0px;
-  width: 90%;
-  padding: 17px;
+  width: 100%;
+  padding: 10px;
   padding-left: 20px;
   border-radius: 50px;
   border: none;
-  font-style: italic;
+}
+input:focus {
+  outline: none;
 }
 #all-products button {
-  background-color: rgba(35, 146, 236, 1);
   color: white;
   border: none;
-  cursor: pointer;
   align-content: center;
-  padding: 10px 15px;
+  background-color: none;
+  background-color: rgba(35, 146, 236, 1);
+  align-items: end;
   border-radius: 50px;
-  margin-left: -10%;
+  padding: 5px;
+}
+#all-products button i {
+  padding: 10px;
+  border-radius: 50px;
 }
 .products {
   display: flex;
   background-color: rgba(237, 237, 237, 1);
   flex-direction: column;
   align-items: center;
+  padding: 5%;
 }
 #products-grid {
-  width: 80%;
+  width: 100%;
+  gap: 2rem;
   display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  gap: 18px;
-  margin: 50px 0px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .a4-brochure {
   background-color: white;
@@ -250,8 +267,9 @@ nav {
   overflow: hidden;
 }
 .product-image:hover img {
-  filter: brightness(110%);
-  transition: 0.4s;
+  filter: brightness(125%);
+  transform: scale(1.15);
+  transition: 4s ease;
 }
 .product-image img {
   width: 100%;
@@ -314,7 +332,8 @@ nav {
   padding: 10px;
 }
 #see-more-items {
-  margin-bottom: 50px;
+  padding: 0px;
+  margin-top: 8rem;
 }
 #see-more-items button {
   padding: 10px 20px;
@@ -395,6 +414,21 @@ nav {
   text-align: center;
   font-size: 32px;
   color: rgba(39, 76, 144, 1);
+}
+.trusted-brand img {
+  width: 100%;
+  padding: 25px 0px;
+}
+.trusted-brand div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trusted-brand div hr {
+  height: 5px;
+  width: 28%;
+  background-color: #d9d9d9;
+  border: none;
 }
 .trusted-brand img {
   width: 100%;

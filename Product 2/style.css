@@ -25,6 +25,8 @@ nav {
   width: 100%;
   z-index: 1;
   color: rgba(35, 146, 236, 1);
+  position: sticky;
+  top: 0px;
 }
 #company-logo {
   width: 18%;
@@ -67,7 +69,7 @@ nav {
   display: flex;
   border-radius: 0px 0px 10px 10px;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: -10px 0px 10px 0px;
   align-items: center;
 }
 #purple-div a:hover {
@@ -75,7 +77,7 @@ nav {
   color: rgba(0, 18, 52, 1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  transition: 0.5s ease;
+  transition: 0.6s ease;
 }
 #purple-div a:hover .fa-solid {
   color: rgba(0, 18, 52, 1);
@@ -159,18 +161,19 @@ nav {
 .title-of-info span {
   color: rgba(210, 112, 112, 1);
 }
+
 .three-column-information {
   display: flex;
   justify-content: space-between;
+  height: 80vh;
 }
 .product-images,
 .customer-choice {
   width: 34.5%;
-  height: 600px;
 }
 
 .product-images {
-  background-image: url("https://s3-alpha-sig.figma.com/img/e57f/00f3/32da83fb1b55a5967fdd4c8f499d2de6?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ah2ZP45oQMKVtBM9D2fH7R2fdOQmjNtiIs62m2TK2Be~8Y-76lB9q5REhxL-fCX1x7qRmmmUQQTAqGxUEMgNY-PKnFQFHk6HehteGVObQ4FItKggswNQDhLgHO2YAep2~MpmknyAGgpQjS48mUkCG55t-UlcVhxdTdojdvuDq-botTVjNLLvuOqsSTX6JelJgMXucyQatGN3iJY~IZmNLexpJNzCTogo0FzUuDasWli9~CS4sEcWAysPbnLoZQmR2PZfFB5OMiX0AlTCnpehacZkzLa7SMqmAc5lBdYnEbBQn6fFaP5suvCvm~2BlWMOIU~U3gX8d1-~Hy-Ox3kg0A__");
+  background-image: url("https://s3-alpha-sig.figma.com/img/2133/3300/cba307968a79a6938b998579462b871b?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eD9-QMTSx14MBJcublmpmVuXHbwmfPsGpWw-X-N7pCJ1PX-ArEe15SHGE47jtHHhPJW7szfR~GFnnaGA~NgBemxtITy2z-Kwus7iSU9z2YozQAbspgkGg5hWGXqZdojtu8FXYsEdbKuOOfJMG88rTCKpPUFNcg1nOK1jSTs7EBnW0prhUAG0kT8gOkgHO8pRR9D8cwPHTGDscfzZNjIQGpvJd9xPuKwDFoVVBrOP8L5GjwJc7Ccdm0fvZR3Fqtd8pmhPw5OEVfXu4BXgdM7HAZOgl-~im9fl8tayDL853AmWN1nmPDOVwyxI3A-xIgzLwQLocT3Dpd8kvaVepCiZyw__");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -204,7 +207,7 @@ nav {
 .finishing,
 .packaging,
 .Delivery {
-  padding-bottom: 10px;
+  margin-bottom: 3rem;
 }
 option {
   font-size: 15px;
@@ -212,14 +215,21 @@ option {
 .finishing-sections,
 .packaging-flex {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 0.8rem;
+  justify-content: space-between;
 }
 .finishing-flex {
   width: 100%;
-  margin-left: 5px;
+  margin: 0rem 0.2rem 0rem 0rem;
+}
+.finishing-flex div {
+  overflow: hidden;
 }
 .finishing-flex img {
   width: 100%;
+  display: block;
+  text-align: center;
+  transform: scale(1.1);
 }
 .delivery-flex,
 .packaging-flex {
@@ -229,13 +239,22 @@ option {
 .delivery-flex div,
 .packaging-flex div {
   width: 100%;
-  margin-right: 5px;
+  margin: 0rem 0.4rem 0rem 0rem;
   background-color: rgba(217, 217, 217, 1);
   align-content: center;
+  overflow: hidden;
+}
+.finishing-flex div,
+.packaging-flex div {
+  margin-bottom: 1rem;
+  border: 3px solid rgba(114, 114, 114, 1);
 }
 
 .packaging-flex div img {
   width: 100%;
+  transform: scale(1.1);
+  display: block;
+  text-align: center;
 }
 .delivery-flex div img {
   width: 70%;
@@ -294,10 +313,13 @@ option {
 }
 .card-size-flex div {
   width: 49%;
+  overflow: hidden;
+  border: 3px solid rgba(114, 114, 114, 1);
 }
 .card-size-flex div img {
   width: 100%;
   display: block;
+  transform: scale(1.1);
 }
 .total-price {
   width: 30%;
@@ -363,10 +385,22 @@ option {
 .trusted-brand {
   padding: 2% 10%;
 }
+
 .trusted-brand h2 {
   text-align: center;
   font-size: 32px;
   color: rgba(39, 76, 144, 1);
+}
+.trusted-brand div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trusted-brand div hr {
+  height: 5px;
+  width: 28%;
+  background-color: rgba(217, 217, 217, 1);
+  border: none;
 }
 .trusted-brand img {
   width: 100%;

@@ -17,17 +17,31 @@
       referrerpolicy="no-referrer"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+      integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       rel="shortcut icon"
       href="image/company logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Home Page</title>
   </head>
   <body>
     <nav>
       <a href="#" id="company-logo">
-        <img src="./index.html" alt="company-logo" />
+        <img src="./image/company logo.png" alt="company-logo" />
       </a>
       <div id="navigation">
         <ul class="about">
@@ -40,8 +54,7 @@
           <i class="fa-solid fa-user"></i>
           <ul class="drop-down">
             <a href="#"><li class="sec">Login</li></a>
-            <a href="#"><li class="sec">Sign Up</li></a
-            ><a href="#"><li class="sec">Help?</li></a>
+            <a href="#"><li class="sec">Sign Up</li></a>
           </ul>
         </div>
         <div id="purple-div">
@@ -61,7 +74,7 @@
 
           <a href="#">
             <div class="purple-div-bg">
-              <i class="fa-solid fa-question"></i>
+              <i class="fa-solid fa-clipboard-question"></i>
               <span>Here to help: <br />+2349086125352</span>
             </div>
           </a>
@@ -71,34 +84,41 @@
         </div>
       </div>
     </nav>
+
     <section class="crazy-bill">
       <div class="section-one-text">
-        <p id="bill">Crazy Bills?</p>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e68f/34c7/20df594ed70eef0296eaf6b182902293?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oVyBnqnVoEKRvHA28C8lxt97AWK2iQc1Z~5uBHS75w70eE6Zc1s0yIVl5VohZOwI3fxbNbYCnfT8N7LiqD9wK24VaIo5-dnpfkxinBbb-Nf9-ZlaVU7gBgBbzUcyLX9PLz6jREtDxc413T-Mr8pGQK2uH54MbUWPv-hRO35MwHgSvKlmAYpg2FykEuubPOhYJAQST5Us~elaBDM3AJFcA0p88KrKv7gZuYs0A3PPE9pUvpn4A87LUfcVtNwZJ04poG9OmZj3iTzjxBfA3X1L6A-xoczXi9r1Ixj72GB9TWnVSV-eDAe3oJ59sj6Ww95LExjHXIgXhRTsYwnDTcmhhQ__"
+          alt="arrow"
+          id="arrow"
+        />
+        <h1 id="bill">Crazy Bills?</h1>
         <p>
-          Worry no more! We offer high<br />quality prints at production rates.
+          Worry no more! We offer high<br />quality prints
+          <span class="production-rate">at production rates.</span>
         </p>
-      </div>
-      <div id="section-one-icon">
-        <a href="#">
-          <div class="sec-one-icons">
-            <img src="./image/pricing icon.png" alt="pricing" width="59px" />
-            <p class="sec-one-link">See Pricing</p>
-          </div>
-        </a>
+        <div id="section-one-icon">
+          <a href="#">
+            <div class="sec-one-icons">
+              <img src="./image/pricing icon.png" alt="pricing" width="59px" />
+              <p class="sec-one-link">See Pricing</p>
+            </div>
+          </a>
 
-        <a href="#">
-          <div class="sec-one-icons">
-            <img src="./image/quote icon.png" alt="quote" width="59px" />
-            <p class="sec-one-link">Get a Quote</p>
-          </div>
-        </a>
+          <a href="#">
+            <div class="sec-one-icons">
+              <img src="./image/quote icon.png" alt="quote" width="59px" />
+              <p class="sec-one-link">Get a Quote</p>
+            </div>
+          </a>
 
-        <a href="#">
-          <div class="sec-one-icons">
-            <img src="./image/sign up icon.png" alt="sign up" width="59px" />
-            <p class="sec-one-link">Sign Up</p>
-          </div>
-        </a>
+          <a href="#">
+            <div class="sec-one-icons">
+              <img src="./image/sign up icon.png" alt="sign up" width="59px" />
+              <p class="sec-one-link">Sign Up</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -107,9 +127,11 @@
         <h2>Search for what you would like to print today.</h2>
         <div id="all-products">
           <input type="search" placeholder="Brochure, Mugs, Flyer...." />
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          <a href="#">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </a>
         </div>
       </div>
     </section>
@@ -133,7 +155,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="./Product 1/business-card.html"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -156,8 +178,8 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
-            <a href="#"><div>View Details</div></a>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="./Product 1/business-card.html"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
         </div>
@@ -179,7 +201,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -202,10 +224,8 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
-            <a href="./Product Page/Product 2/index.html"
-              ><div>View Details</div></a
-            >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="./Product 2/index.html"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
         </div>
@@ -227,7 +247,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -250,7 +270,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -273,7 +293,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -296,7 +316,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -319,7 +339,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -342,7 +362,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -365,7 +385,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -388,7 +408,7 @@
             <p class="product-price">₦ 6000</p>
           </div>
           <div class="customers">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <a href="#"><div>View Details</div></a>
             <i class="fa-solid fa-share-nodes"></i>
           </div>
@@ -438,7 +458,11 @@
       </div>
 
       <div class="trusted-brand">
-        <h2>Join the brands who trust us</h2>
+        <div>
+          <hr />
+          <h2>Join the brands who trust us</h2>
+          <hr />
+        </div>
         <img src="image/partnership-logo.png" alt="our partners" />
       </div>
     </section>
