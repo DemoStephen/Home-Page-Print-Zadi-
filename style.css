@@ -203,7 +203,7 @@ nav {
   background-image: url("image/illustration2.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right;
   overflow: hidden;
 }
 .search h2 {
