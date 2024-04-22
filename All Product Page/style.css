@@ -148,8 +148,29 @@ nav {
   background-color: #616161;
   border-bottom: 2px solid white;
 }
-.all-products {
-  z-index: 1;
+.all-products h2,
+.all-products p {
+  color: white;
+}
+#all-products {
+  background-color: white;
+  width: 40%;
+  display: flex;
+  border-radius: 5px;
+}
+#all-products input {
+  color: white;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+}
+#all-products input:focus {
+  outline: none;
+  color: black;
+}
+#all-products a {
+  background-color: blue;
 }
 #fast-quality {
   background-image: linear-gradient(rgba(0, 181, 255, 1), rgba(0, 109, 153, 1));
