@@ -148,9 +148,15 @@ nav {
   background-color: #616161;
   border-bottom: 2px solid white;
 }
-.all-products h2,
-.all-products p {
+
+#fast-quality h2 {
+  font-size: 35px;
   color: white;
+}
+#fast-quality p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 #all-products {
   background-color: white;
@@ -169,8 +175,20 @@ nav {
   outline: none;
   color: black;
 }
-#all-products a {
-  background-color: blue;
+#all-products button {
+  border: none;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px 0 10px;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#all-products button i {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 109, 153, 1);
+  color: white;
 }
 #fast-quality {
   background-image: linear-gradient(rgba(0, 181, 255, 1), rgba(0, 109, 153, 1));
@@ -196,6 +214,38 @@ nav {
   flex-direction: column;
 }
 
+.see-all {
+  display: flex;
+  padding: 0% 5% 2% 5%;
+  height: 600px;
+  overflow: hidden;
+}
+.static-categories {
+  width: 20%;
+  background-color: blue;
+}
+.static-categories p {
+  background-color: azure;
+  padding: 5px 5px 5px 0;
+  margin: 2px;
+}
+.all-categories {
+  width: 80%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  background-color: #616161;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 10px;
+}
 #speedy-quality {
   background-color: black;
   color: white;
