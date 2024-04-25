@@ -250,10 +250,7 @@ input:focus {
   align-items: center;
   padding: 5%;
 }
-.popular-product {
-  display: flex;
-  justify-content: space-between;
-}
+
 #products-grid {
   width: 100%;
   gap: 2rem;
