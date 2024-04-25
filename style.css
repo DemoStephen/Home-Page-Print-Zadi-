@@ -250,11 +250,16 @@ input:focus {
   align-items: center;
   padding: 5%;
 }
+.popular-product {
+  display: flex;
+  justify-content: space-between;
+}
 #products-grid {
   width: 100%;
   gap: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(400px, auto);
 }
 .a4-brochure {
   background-color: white;
@@ -271,8 +276,8 @@ input:focus {
 }
 .product-image:hover img {
   filter: brightness(125%);
-  transform: scale(1.15);
-  transition: 4s ease;
+  transform: scale(1.05);
+  transition: 0.5s ease;
 }
 .product-image img {
   width: 100%;
