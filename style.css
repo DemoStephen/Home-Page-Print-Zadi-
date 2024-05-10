@@ -387,7 +387,7 @@ input:focus {
   background-color: red;
 }
 
-.quality-illustration-information i {
+.quality-illustration-information i, .red-bg span {
   color: white;
   font-size: 20px;
   border-radius: 50%;
@@ -395,10 +395,12 @@ input:focus {
   text-align: center;
   margin-left: -15%;
   background-color: black;
-  padding: 5px;
+  padding: 10px;
 }
-.red-bg i {
+.red-bg span {
   background-color: red;
+  font-size: 30px;
+  padding: 5px;
 }
 #quality-illustration-information1 {
   background-image: url("https://s3-alpha-sig.figma.com/img/93e3/dfe8/df441e04dc5750fff3d0e28bad02c414?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dmx4RSbqaflt4jvUK-4WeplMzV-wFF~yxmFgYqtw2C8WijPYCnZGFDDwLknsFeL8mdG3393VvL-zIqcrO2z4D1WjKpHg7ptgbsTKS9bQTMsTHw4MbMvxjJ~tSjR1OWew8liO5a9Q0dBHrHPQDFY4MizM5vXHN4cAYTjYkYP82d9a2Vto4~pDkQ8Zfq7Sefut8vyUuFd85wufDz9tGf0ONduONhUtxzGdsjQ0nwJmzsifTPyQvEyz549NLBfsNGXfm663cODvRx3RFmU-thggbOAD~xvyVFXEINtdbbLjnrtmP~zR92k4VUcHPuTIG8rzVb4~5dy7o88CCwaQAzRsLA__");
