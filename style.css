@@ -13,20 +13,22 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: white;
+  max-width: 1900px;
+  min-width: 1360px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  position: sticky;
-  top: 0rem;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  width: 100%;
   padding: 0% 5%;
+  background-color: white;
+  
+  position: sticky;
+  top: 0;
   z-index: 1;
-  color: rgba(35, 146, 236, 1);
+  color: #2392ec;
 }
 #company-logo {
   width: 15%;
@@ -73,25 +75,26 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+  overflow: hidden;
+}
+#purple-div a {
+  text-decoration: none;
+  text-align: left;
+  align-items: center;
+  
 }
 #purple-div a:hover {
   background-color: rgba(35, 146, 236, 1);
   color: rgba(0, 18, 52, 1);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   transition: 0.5s ease;
 }
 #purple-div a:hover .fa-solid {
   color: rgba(0, 18, 52, 1);
 }
 #purple-div a:hover span {
-  color: rgba(0, 18, 52, 1);
+  color: #001234;
 }
-#purple-div a {
-  text-decoration: none;
-  text-align: left;
-  align-items: center;
-}
+
 .purple-div-bg {
   display: flex;
   flex-direction: row;
@@ -148,6 +151,9 @@ nav {
   border-bottom: 2px solid white;
 }
 
+
+
+
 .crazy-bill {
   background-image: url("image/illlustration1.jpeg");
   background-repeat: no-repeat;
@@ -176,7 +182,7 @@ nav {
 #bill {
   font-size: 4.75rem;
   font-weight: 500;
-  color: rgba(255, 153, 51, 1);
+  color: #ff9933;
 }
 #section-one-icon {
   display: flex;
@@ -329,7 +335,7 @@ input:focus {
   font-weight: 700;
 }
 .customers a div:hover {
-  background-color: rgba(255, 0, 0, 1);
+  background-color: #ff0000;
   color: white;
   transition: 0.5s;
 }
@@ -354,11 +360,7 @@ input:focus {
   border: 2px solid rgba(51, 102, 153, 1);
   color: white;
 }
-.quality-prints {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
+
 
 #speedy-quality {
   background-color: black;
@@ -403,12 +405,10 @@ input:focus {
   padding: 5px;
 }
 #quality-illustration-information1 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/93e3/dfe8/df441e04dc5750fff3d0e28bad02c414?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dmx4RSbqaflt4jvUK-4WeplMzV-wFF~yxmFgYqtw2C8WijPYCnZGFDDwLknsFeL8mdG3393VvL-zIqcrO2z4D1WjKpHg7ptgbsTKS9bQTMsTHw4MbMvxjJ~tSjR1OWew8liO5a9Q0dBHrHPQDFY4MizM5vXHN4cAYTjYkYP82d9a2Vto4~pDkQ8Zfq7Sefut8vyUuFd85wufDz9tGf0ONduONhUtxzGdsjQ0nwJmzsifTPyQvEyz549NLBfsNGXfm663cODvRx3RFmU-thggbOAD~xvyVFXEINtdbbLjnrtmP~zR92k4VUcHPuTIG8rzVb4~5dy7o88CCwaQAzRsLA__");
   background-size: cover;
   background-repeat: no-repeat;
 }
 #quality-illustration-information2 {
-  background-image: url("https://s3-alpha-sig.figma.com/img/b999/1e95/6b7f589ae5ddf6544711a514dfbca083?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RAJEuzbDk58DCyOuflajAq7Q-jixE3QVBLV33Wy4SJU8igwp84Wu4XHH0BL2hy3WWL~7v2aWjbK6qxIyMtInyvY28i2knnVpuPEyAlRerl6t5mGYxXUFQPOFBaidwq6rQov7d65AxYVflXzQSCNu0yRiEWZUZabbQdh~3CuMo82sEpYnKM7MFVnZhdo6Emd9lNFV1Q0AKKil6kB4~82eAE2OSFqXjIfg229za-u32L2B9IcxLwyAiPHZzJgUjQHwQi4TrNCp2ielBK5Pzny13N~khl7EJNPPKYkFgAb63jEWSj-rjSBXfEt5UtKDqfSQdRViG9lYmrSaflP6YelmxQ__");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -416,6 +416,7 @@ input:focus {
 }
 .trusted-brand {
   padding: 2% 10%;
+  background-color: white;
 }
 .trusted-brand h2 {
   text-align: center;

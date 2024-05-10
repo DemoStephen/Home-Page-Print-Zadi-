@@ -1,0 +1,40 @@
+// DO NOT CHANGE.
+// YOU ARE FREE TO CLONE/ COPY THIS PROJECT.
+// DO NOT CHANGE ANY CODE.
+// DO NOT CHANGE ANY LINE OF CODE.
+
+//Font's: Here is the detail of the fonts used in this project.
+$default-font-size: 1rem;
+$default-font-family: "Poppins", sans-serif;
+$default-font-weight: 400;
+
+//Color's: This are the colors used in this project.
+//----Text-----
+$primary-color: #2392ec;
+$secondary-color: #616161;
+$tetiary-color:#001234;
+$default-color: #000000;
+$other-color: #ff9933;
+//-----Background-----
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #616161;
+$tetiary-bg-color: #ff0000;
+$default-bg-color: white;
+
+// ---Margin<>Padding----
+$margin: 5px;
+$default-marging: 0;
+$default-padding: 0;
+$padding: 10px;
+
+
+
+// MIXINs
+// Flex<<<>>>>Grid
+@mixin flex($flex-direction:row){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
