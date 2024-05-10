@@ -141,4 +141,11 @@ body nav #navigation #purple-div a:hover {
 }
 body nav #navigation #purple-div a:hover .fa-solid, body nav #navigation #purple-div a:hover span {
   color: #001234;
+}
+body .crazy-bill {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: center;
+  background-image: "../image/illlustration1.jpeg";
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */

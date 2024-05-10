@@ -38,3 +38,13 @@ $padding: 10px;
     align-content: center;
     align-items: center;
 }
+
+
+//Background Property
+@mixin bgd-property($image:"#"){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: center;
+    background-image: $image;
+}
+
