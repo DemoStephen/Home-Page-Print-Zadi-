@@ -41,7 +41,7 @@ $padding: 10px;
 
 
 //Background Property
-@mixin bgd-property($image:"#"){
+@mixin bgd-property($image:url("#")){
     background-repeat: no-repeat;
     background-size: cover;
     background-color: center;

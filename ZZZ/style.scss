@@ -127,8 +127,8 @@ body {
     }
 
     .crazy-bill { 
-        @include bgd-property("../image/illlustration1.jpeg");
-        height: 100vh;
+        @include bgd-property(url("./images/illlustration1.jpeg"));
+        overflow: hidden;
     }
 
 }

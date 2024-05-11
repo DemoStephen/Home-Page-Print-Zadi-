@@ -146,6 +146,6 @@ body .crazy-bill {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: center;
-  background-image: "../image/illlustration1.jpeg";
-  height: 100vh;
+  background-image: url("./images/illlustration1.jpeg");
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
