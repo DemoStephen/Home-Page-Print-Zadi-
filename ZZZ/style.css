@@ -22,6 +22,9 @@ body nav {
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   padding: 0px 10%;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 body nav #company-logo {
   width: 15%;
@@ -35,7 +38,7 @@ body nav .about {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
   list-style: none;
   width: 30%;
 }
@@ -145,7 +148,50 @@ body nav #navigation #purple-div a:hover .fa-solid, body nav #navigation #purple
 body .crazy-bill {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: center;
+  background-position: center;
+  background-size: 100%;
   background-image: url("./images/illlustration1.jpeg");
   overflow: hidden;
+}
+body .crazy-bill .crazy-bill-text {
+  width: 35vw;
+  position: relative;
+  left: 55vw;
+  text-align: end;
+  margin-top: 60vh;
+}
+body .crazy-bill .crazy-bill-text img {
+  width: 7rem;
+  display: block;
+  margin-left: 6rem;
+}
+body .crazy-bill .crazy-bill-text h1 {
+  font-size: 4rem;
+  color: #ff9933;
+}
+body .crazy-bill .crazy-bill-text p {
+  font-size: 2rem;
+  color: #ffffff;
+}
+body .crazy-bill .crazy-bill-text p span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+body .crazy-bill .crazy-bill-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  margin: 5rem 10vw 2rem 0;
+}
+body .crazy-bill .crazy-bill-icons a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+body .crazy-bill .crazy-bill-icons a div {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

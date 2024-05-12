@@ -21,6 +21,9 @@ body {
         @include flex(row);
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
         padding: 0px 10%;
+        position: sticky;
+        top: 0;
+        background-color: $default-bg-color;
         #company-logo {
             width: 15%;
             img{
@@ -29,7 +32,7 @@ body {
         }
         .about{
                 @include flex;
-                justify-content: start;
+                justify-content: end;
                 list-style: none;
                 width: 30%;
                 li{
@@ -129,6 +132,45 @@ body {
     .crazy-bill { 
         @include bgd-property(url("./images/illlustration1.jpeg"));
         overflow: hidden;
+        .crazy-bill-text{
+            width: 35vw;
+            position: relative;
+            left: 55vw;
+            text-align: end;
+            margin-top: 60vh;
+            img {
+               width: $default-font-size*7;
+               display: block;
+               margin-left: 6rem;
+            }
+            h1{
+                font-size: $default-font-size *4;
+                color: $other-color;
+            }
+            p{
+                font-size: $default-font-size *2;                
+                color: $primary-bg-color;
+                span{
+                    text-decoration: underline;
+                    font-weight: 500;      
+                }
+            }
+        }
+        .crazy-bill-icons{
+            @include flex;
+            justify-content: end;
+            gap: 10px;
+            margin: 5rem 10vw 2rem 0;
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 500;
+                div{
+                    text-align: center;
+                }
+            }
+        }
     }
 
+    
 }
