@@ -13,164 +13,121 @@ body {
     font-family: $default-font-family;
     font-weight: $default-font-weight;
     background-color: $default-bg-color;
-    max-width: 1850px;
-    min-width: 1360px;
+    max-width: 1880px;
+    min-width: 1270px;
     margin: 0 auto;
 
     nav{
         @include flex(row);
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-        padding: 0px 10%;
         position: sticky;
         top: 0;
         background-color: $default-bg-color;
+        z-index: 1;
+        padding: 0 10%;
+
         #company-logo {
             width: 15%;
             img{
                 width: 100%;
             }
         }
+
         .about{
-                @include flex;
-                justify-content: end;
-                list-style: none;
-                width: 30%;
-                li{
-                    margin: $margin;
-                    a{
-                        padding: $padding;
-                        color: $secondary-color;
-                        text-decoration: none;
-                        &:hover{
-                            color:$primary-bg-color;
-                            background-color:$tetiary-color;
-                            border-radius: 5px;
-                            transition: 0.5s ease;
-                        }
-                    }
-                }
-        }
-        #navigation {
-            @include flex();
-            gap: 10px;
-            width: 50%;
-            .nav-b{
-                text-decoration: none;
-                width: 10%;
-                align-content: center;
-                position: relative;
-                text-align: center;
-                :hover { 
-                    color: $primary-color;
-                    transition: 0.5s ease;
-                }
-                .fa-solid {
-                    font-size: $default-font-size+0.5;
-                    position: relative;
-                    top:0;
-                    padding: $padding*2; 
-                    &:hover .drop-down{
-                        visibility: visible;
-                    }                  
-                }
-                .drop-down { 
-                    list-style: none;
-                    position: absolute;
-                    left: 0;
-                    text-align: left;
-                    width: 150px;
-                    visibility: hidden;
-                    a{
-                        text-decoration: none;
-                        color: $tetiary-color;
-                        font-weight: 600;
-                        .sec{
-                            padding: $padding;
-                            background-color: $secondary-color;
-                            border-bottom: 2px solid white;
-                            &:hover{
-                                background-color: $tetiary-color;
-                                color: $default-bg-color;
-                                transition: 0.5s ease;
-                            }
-                        }
+            @include flex;
+            justify-content: start;
+            list-style: none;
+            li{
+                margin: 0 $margin 0 0;
+                a{
+                    padding: $padding;
+                    color: $secondary-color;
+                    text-decoration: none;
+                    &:hover{
+                        color:$primary-bg-color;
+                        background-color:$tetiary-color;
+                        border-radius: 5px;
+                        transition: 0.5s ease;
                     }
                 }
             }
-            #purple-div{
-                @include flex();
-                background-color: $tetiary-color;
+        }
+
+        #navigation {
+            @include flex();
+            gap: 15px;
+            .nav-b{
+                align-content: center;
+                text-align: center;
+                font-size: $default-font-size*1.5;
+                color: $tetiary-color;
                 position: relative;
-                top: -10px;
-                border-radius: 0px 0px 10px 10px;
-                overflow: hidden;
-                a { 
-                    .purple-div-bg {
-                        @include flex;
-                        color:$primary-bg-color;
-                        .fa-solid{
-                            font-size: $default-font-size*2;
-                            padding: 15px 10px;
+                &:hover .drop-down{
+                    visibility: visible;
+                    @include animation1;
+                }
+                i{
+                    padding: 20px 5px;
+                    
+                }
+                a{
+                    text-decoration: none;
+                    color: $tetiary-color;
+                }
+                .drop-down{
+                    position: absolute;
+                    left: -50px;
+                    font-size: $default-font-size;
+                    list-style: none;
+                    background-color: $tetiary-color;
+                    text-align: start;
+                    width: 100px;
+                    border: none;
+                    visibility: hidden;
+                    li{
+                        padding: 10px;
+                        &:hover{
+                            background-color: $primary-color;
+                            color: $tetiary-color;
                         }
                     }
-                    text-decoration: none;
-                    text-align: left;
-                    align-items: center;
+                    a{
+                        color:white;
+                        
+                    }
+
+                
+                }
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+
+            #purple-div{
+                @include flex();
+                gap:10px;
+                background-color: $tetiary-color;
+                border-radius: 0px 0px 10px 10px;
+                transform: translateY(-5px);
+                overflow: hidden;          
+                .purple-div-bg {
+                    @include flex;
+                    gap: 10px;
+                    padding: 10px;
+                    i{
+                        font-size: $default-font-size*2;
+                    }
                     &:hover{
                         background-color: $primary-color;
                         color: $tetiary-color;
-                        transition: 0.5s ease;
-                    }
-                    &:hover .fa-solid, &:hover span {
-                        color:$tetiary-color;
                     }
                 }
             }
+
         }
     }
-
-    .crazy-bill { 
-        @include bgd-property(url("./images/illlustration1.jpeg"));
-        overflow: hidden;
-        .crazy-bill-text{
-            width: 35vw;
-            position: relative;
-            left: 55vw;
-            text-align: end;
-            margin-top: 60vh;
-            img {
-               width: $default-font-size*7;
-               display: block;
-               margin-left: 6rem;
-            }
-            h1{
-                font-size: $default-font-size *4;
-                color: $other-color;
-            }
-            p{
-                font-size: $default-font-size *2;                
-                color: $primary-bg-color;
-                span{
-                    text-decoration: underline;
-                    font-weight: 500;      
-                }
-            }
-        }
-        .crazy-bill-icons{
-            @include flex;
-            justify-content: end;
-            gap: 10px;
-            margin: 5rem 10vw 2rem 0;
-            a{
-                text-decoration: none;
-                color: white;
-                font-weight: 500;
-                div{
-                    text-align: center;
-                }
-            }
-        }
+    .crazy-bill{
+        @include bgd-property(url("./images/illlustration1.jpeg"))
     }
-
-    
 }

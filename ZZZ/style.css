@@ -10,8 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: white;
-  max-width: 1850px;
-  min-width: 1360px;
+  max-width: 1880px;
+  min-width: 1270px;
   margin: 0 auto;
 }
 body nav {
@@ -21,10 +21,11 @@ body nav {
   align-content: center;
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-  padding: 0px 10%;
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 1;
+  padding: 0 10%;
 }
 body nav #company-logo {
   width: 15%;
@@ -38,12 +39,11 @@ body nav .about {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   list-style: none;
-  width: 30%;
 }
 body nav .about li {
-  margin: 5px;
+  margin: 0 5px 0 0;
 }
 body nav .about li a {
   padding: 10px;
@@ -62,51 +62,60 @@ body nav #navigation {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  gap: 10px;
-  width: 50%;
+  gap: 15px;
 }
 body nav #navigation .nav-b {
-  text-decoration: none;
-  width: 10%;
   align-content: center;
-  position: relative;
   text-align: center;
-}
-body nav #navigation .nav-b :hover {
-  color: #2392ec;
-  transition: 0.5s ease;
-}
-body nav #navigation .nav-b .fa-solid {
   font-size: 1.5rem;
+  color: #001234;
   position: relative;
-  top: 0;
-  padding: 20px;
 }
-body nav #navigation .nav-b .fa-solid:hover .drop-down {
+body nav #navigation .nav-b:hover .drop-down {
   visibility: visible;
+  animation: dropDown 0.5s ease both;
 }
-body nav #navigation .nav-b .drop-down {
-  list-style: none;
-  position: absolute;
-  left: 0;
-  text-align: left;
-  width: 150px;
-  visibility: hidden;
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-body nav #navigation .nav-b .drop-down a {
+body nav #navigation .nav-b i {
+  padding: 20px 5px;
+}
+body nav #navigation .nav-b a {
   text-decoration: none;
   color: #001234;
-  font-weight: 600;
 }
-body nav #navigation .nav-b .drop-down a .sec {
-  padding: 10px;
-  background-color: #616161;
-  border-bottom: 2px solid white;
-}
-body nav #navigation .nav-b .drop-down a .sec:hover {
+body nav #navigation .nav-b .drop-down {
+  position: absolute;
+  left: -50px;
+  font-size: 1rem;
+  list-style: none;
   background-color: #001234;
+  text-align: start;
+  width: 100px;
+  border: none;
+  visibility: hidden;
+}
+body nav #navigation .nav-b .drop-down li {
+  padding: 10px;
+}
+body nav #navigation .nav-b .drop-down li:hover {
+  background-color: #2392ec;
+  color: #001234;
+}
+body nav #navigation .nav-b .drop-down a {
   color: white;
-  transition: 0.5s ease;
+}
+body nav #navigation a {
+  text-decoration: none;
+  color: white;
 }
 body nav #navigation #purple-div {
   display: flex;
@@ -114,35 +123,26 @@ body nav #navigation #purple-div {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  gap: 10px;
   background-color: #001234;
-  position: relative;
-  top: -10px;
   border-radius: 0px 0px 10px 10px;
+  transform: translateY(-5px);
   overflow: hidden;
 }
-body nav #navigation #purple-div a {
-  text-decoration: none;
-  text-align: left;
-  align-items: center;
-}
-body nav #navigation #purple-div a .purple-div-bg {
+body nav #navigation #purple-div .purple-div-bg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  color: #ffffff;
+  gap: 10px;
+  padding: 10px;
 }
-body nav #navigation #purple-div a .purple-div-bg .fa-solid {
+body nav #navigation #purple-div .purple-div-bg i {
   font-size: 2rem;
-  padding: 15px 10px;
 }
-body nav #navigation #purple-div a:hover {
+body nav #navigation #purple-div .purple-div-bg:hover {
   background-color: #2392ec;
-  color: #001234;
-  transition: 0.5s ease;
-}
-body nav #navigation #purple-div a:hover .fa-solid, body nav #navigation #purple-div a:hover span {
   color: #001234;
 }
 body .crazy-bill {
@@ -151,47 +151,4 @@ body .crazy-bill {
   background-position: center;
   background-size: 100%;
   background-image: url("./images/illlustration1.jpeg");
-  overflow: hidden;
-}
-body .crazy-bill .crazy-bill-text {
-  width: 35vw;
-  position: relative;
-  left: 55vw;
-  text-align: end;
-  margin-top: 60vh;
-}
-body .crazy-bill .crazy-bill-text img {
-  width: 7rem;
-  display: block;
-  margin-left: 6rem;
-}
-body .crazy-bill .crazy-bill-text h1 {
-  font-size: 4rem;
-  color: #ff9933;
-}
-body .crazy-bill .crazy-bill-text p {
-  font-size: 2rem;
-  color: #ffffff;
-}
-body .crazy-bill .crazy-bill-text p span {
-  text-decoration: underline;
-  font-weight: 500;
-}
-body .crazy-bill .crazy-bill-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  justify-content: end;
-  gap: 10px;
-  margin: 5rem 10vw 2rem 0;
-}
-body .crazy-bill .crazy-bill-icons a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-body .crazy-bill .crazy-bill-icons a div {
-  text-align: center;
 }/*# sourceMappingURL=style.css.map */
