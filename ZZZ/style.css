@@ -24,7 +24,6 @@ body nav {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 1;
   padding: 0 10%;
 }
 body nav #company-logo {
@@ -149,6 +148,8 @@ body .crazy-bill {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-size: 100%;
   background-image: url("./images/illlustration1.jpeg");
+}
+body .crazy-bill .crazy-bill-text {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

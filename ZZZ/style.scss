@@ -23,7 +23,6 @@ body {
         position: sticky;
         top: 0;
         background-color: $default-bg-color;
-        z-index: 1;
         padding: 0 10%;
 
         #company-logo {
@@ -127,8 +126,13 @@ body {
 
         }
     }
-    
+
     .crazy-bill{
-        @include bgd-property(url("./images/illlustration1.jpeg"))
+        @include bgd-property(url("./images/illlustration1.jpeg"));
+        // align-content: end;
+        .crazy-bill-text{
+            background-color: red;
+        }
+        
     }
 }
