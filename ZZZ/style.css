@@ -25,6 +25,7 @@ body nav {
   top: 0;
   background-color: white;
   padding: 0 10%;
+  z-index: 1;
 }
 body nav #company-logo {
   width: 15%;
@@ -149,7 +150,71 @@ body .crazy-bill {
   background-size: cover;
   background-position: center;
   background-image: url("./images/illlustration1.jpeg");
+  align-content: end;
+}
+body .crazy-bill .arrow {
+  width: 40%;
+  margin: 25rem 0 0 0;
+  transform: translateX(60vw);
+}
+body .crazy-bill .arrow img {
+  width: 100px;
 }
 body .crazy-bill .crazy-bill-text {
-  background-color: red;
+  margin-right: 10%;
+  text-align: end;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+body .crazy-bill .crazy-bill-text h1 {
+  font-size: 4.5rem;
+  color: #ff9933;
+  font-weight: 300;
+}
+body .crazy-bill .crazy-bill-text span {
+  text-decoration: underline;
+}
+body .crazy-bill .crazy-bill-icons {
+  display: flex;
+  justify-content: end;
+  margin: 3rem 10% 3rem 0;
+  text-align: center;
+}
+body .crazy-bill .crazy-bill-icons a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+body .search {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../image/illustration2.png");
+  background-size: contain;
+  background-color: #ff9933;
+}
+body .search #for-printer {
+  padding: 20px 10%;
+}
+body .search #for-printer h2 {
+  width: 40%;
+  font-size: 2rem;
+}
+body .search #for-printer #all-products {
+  background-color: white;
+  padding: 10px;
+  width: 40%;
+  border-radius: 30px;
+  margin: 2rem 0 5rem 0;
+}
+body .search #for-printer #all-products input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+}
+body .search #for-printer #all-products button {
+  background-color: blue;
+  padding: 10px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

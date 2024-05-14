@@ -24,6 +24,7 @@ body {
         top: 0;
         background-color: $default-bg-color;
         padding: 0 10%;
+        z-index: 1;
 
         #company-logo {
             width: 15%;
@@ -129,10 +130,74 @@ body {
 
     .crazy-bill{
         @include bgd-property(url("./images/illlustration1.jpeg"));
-        // align-content: end;
+        align-content: end;
+        .arrow{
+            width: 40%;
+            margin: 25rem 0 0 0 ;
+            transform: translateX(60vw);
+            img{
+                width: 100px;
+            }
+        }
+
         .crazy-bill-text{
-            background-color: red;
+            margin-right: 10%;
+            text-align: end;
+            font-size: $default-font-size*2;
+            color: $primary-bg-color;
+            font-weight: 600;
+            h1{
+                font-size: $default-font-size*4.5;
+                color: $other-color;
+                font-weight: 300;
+            }
+            span{
+                text-decoration: underline;
+            }
         }
         
+        .crazy-bill-icons{
+            display: flex;
+            justify-content: end;
+            margin: 3rem 10% 3rem 0;
+            text-align: center;
+            a{
+                margin: 10px;
+                text-decoration: none;
+                color: white;
+            }
+        }
     }
+    
+    .search{
+        @include bgd-property(url("../image/illustration2.png"));
+        background-size: contain;
+        background-color: $other-color;
+        #for-printer{
+            padding: 20px 10%;
+            h2{
+                width: 40%;
+                font-size: $default-font-size*2;
+            }
+            #all-products{
+                background-color: white;
+                padding: 10px;
+                width: 40%;
+                border-radius: $padding*3;
+                margin: 2rem 0 5rem 0;
+                input{
+                    width: 80%;
+                    padding: 10px;
+                    border: none;
+                }
+                button{
+                    background-color: blue;
+                    padding: 10px;
+                    color: white;
+                    border-radius: ;
+                }
+            }
+        }
+    }
+
 }
