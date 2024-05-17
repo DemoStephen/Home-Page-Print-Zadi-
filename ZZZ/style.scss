@@ -189,7 +189,7 @@ body {
                 @include flex;
                 input{
                     width: 100%;
-                    padding: 10px;
+                    padding: 20px;
                     border: none;
                     outline: none;
                 }
@@ -210,13 +210,21 @@ body {
         background-color: $default-color;
         color: $default-bg-color;
         padding: 1rem 10%;
+        .newsletter{
+            margin: 1rem auto;
+            
+        }
         .company-information { 
             @include flex();
+            align-items: start;
+            align-content: start;
             gap: 20px;
             .company-article{
                 background-color: $other-color;
+                width: 25%;
                 img{
-                    width: 100px;
+                    width: 150px;
+                    filter:invert(50);
                 }
             }
         }

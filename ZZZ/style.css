@@ -216,7 +216,7 @@ body .search #for-printer #all-products {
 }
 body .search #for-printer #all-products input {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border: none;
   outline: none;
 }
@@ -232,17 +232,24 @@ body footer {
   color: white;
   padding: 1rem 10%;
 }
+body footer .newsletter {
+  margin: 1rem auto;
+}
 body footer .company-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  align-items: start;
+  align-content: start;
   gap: 20px;
 }
 body footer .company-information .company-article {
   background-color: #ff9933;
+  width: 25%;
 }
 body footer .company-information .company-article img {
-  width: 100px;
+  width: 150px;
+  filter: invert(50);
 }/*# sourceMappingURL=style.css.map */
