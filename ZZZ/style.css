@@ -10,15 +10,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color: white;
-  max-width: 1880px;
-  min-width: 1350px;
+  max-width: 1750px;
+  min-width: 1450px;
   margin: 0 auto;
 }
 body nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
@@ -31,22 +30,21 @@ body nav #company-logo {
   width: 15%;
 }
 body nav #company-logo img {
-  width: 100%;
+  width: 90%;
+  background-color: white;
 }
 body nav .about {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   list-style: none;
-}
-body nav .about li {
-  margin: 0 5px 0 0;
+  margin: 0;
 }
 body nav .about li a {
   padding: 10px;
+  margin: 5px;
   color: #616161;
   text-decoration: none;
 }
@@ -60,13 +58,11 @@ body nav #navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   gap: 15px;
+  margin: 0;
 }
 body nav #navigation .nav-b {
-  align-content: center;
-  text-align: center;
   font-size: 1.5rem;
   color: #001234;
   position: relative;
@@ -86,7 +82,7 @@ body nav #navigation .nav-b:hover .drop-down {
   }
 }
 body nav #navigation .nav-b i {
-  padding: 20px 5px;
+  padding: 30px 10px;
 }
 body nav #navigation .nav-b a {
   text-decoration: none;
@@ -99,8 +95,9 @@ body nav #navigation .nav-b .drop-down {
   list-style: none;
   background-color: #001234;
   text-align: start;
-  width: 100px;
+  width: 150px;
   border: none;
+  padding: 0;
   visibility: hidden;
 }
 body nav #navigation .nav-b .drop-down li {
@@ -112,6 +109,7 @@ body nav #navigation .nav-b .drop-down li:hover {
 }
 body nav #navigation .nav-b .drop-down a {
   color: white;
+  margin-left: 0;
 }
 body nav #navigation a {
   text-decoration: none;
@@ -121,19 +119,17 @@ body nav #navigation #purple-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   gap: 10px;
   background-color: #001234;
   border-radius: 0px 0px 10px 10px;
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   overflow: hidden;
 }
 body nav #navigation #purple-div .purple-div-bg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   gap: 10px;
   padding: 10px;
@@ -211,7 +207,6 @@ body .search #for-printer #all-products {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
 }
 body .search #for-printer #all-products input {
@@ -228,7 +223,6 @@ body .search #for-printer #all-products button {
   border: none;
 }
 body footer {
-  background-color: #000000;
   color: white;
   padding: 1rem 10%;
 }
@@ -239,7 +233,6 @@ body footer .company-information {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
   align-items: start;
   align-content: start;
@@ -252,4 +245,15 @@ body footer .company-information .company-article {
 body footer .company-information .company-article img {
   width: 150px;
   filter: invert(50);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-color: blue;
+  }
 }/*# sourceMappingURL=style.css.map */

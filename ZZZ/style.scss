@@ -13,34 +13,38 @@ body {
     font-family: $default-font-family;
     font-weight: $default-font-weight;
     background-color: $default-bg-color;
-    max-width: 1880px;
-    min-width: 1350px;
+    max-width: 1750px;
+    min-width: 1450px;
     margin: 0 auto;
 
     nav{
-        @include flex(row);
+        @include flex();
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
         position: sticky;
         top: 0;
         background-color: $default-bg-color;
         padding: 0 10%;
         z-index: 1;
-
         #company-logo {
             width: 15%;
+            // background-color: #930606;
+            // text-align: center;
             img{
-                width: 100%;
+                width: 90%;
+                background-color: white;
             }
         }
 
         .about{
             @include flex;
-            justify-content: start;
+            justify-content: space-between;
             list-style: none;
+            // background-color: $other-color;
+            margin: 0;
             li{
-                margin: 0 $margin 0 0;
                 a{
                     padding: $padding;
+                    margin: 5px;
                     color: $secondary-color;
                     text-decoration: none;
                     &:hover{
@@ -56,9 +60,11 @@ body {
         #navigation {
             @include flex();
             gap: 15px;
+            // background-color: $other-color;
+            margin: 0;
             .nav-b{
-                align-content: center;
-                text-align: center;
+                // align-content: center;
+                // text-align: center;
                 font-size: $default-font-size*1.5;
                 color: $tetiary-color;
                 position: relative;
@@ -67,7 +73,7 @@ body {
                     @include animation1;
                 }
                 i{
-                    padding: 20px 5px;
+                    padding: 30px 10px;
                     
                 }
                 a{
@@ -81,8 +87,9 @@ body {
                     list-style: none;
                     background-color: $tetiary-color;
                     text-align: start;
-                    width: 100px;
+                    width: 150px;
                     border: none;
+                    padding: 0;
                     visibility: hidden;
                     li{
                         padding: 10px;
@@ -93,7 +100,7 @@ body {
                     }
                     a{
                         color:white;
-                        
+                        margin-left: 0;   
                     }
 
                 
@@ -109,8 +116,8 @@ body {
                 gap:10px;
                 background-color: $tetiary-color;
                 border-radius: 0px 0px 10px 10px;
-                transform: translateY(-5px);
-                overflow: hidden;          
+                transform: translateY(-10px);
+                overflow: hidden;
                 .purple-div-bg {
                     @include flex;
                     gap: 10px;
@@ -124,7 +131,6 @@ body {
                     }
                 }
             }
-
         }
     }
 
@@ -207,7 +213,7 @@ body {
 
 
     footer{
-        background-color: $default-color;
+        // background-color: $default-color;
         color: $default-bg-color;
         padding: 1rem 10%;
         .newsletter{
@@ -228,5 +234,18 @@ body {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: red;
+
+    }
+}
+@media screen and (max-width: 450px) {
+    body{
+        background-color: blue;
+
     }
 }
