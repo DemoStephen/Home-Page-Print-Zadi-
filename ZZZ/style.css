@@ -223,8 +223,46 @@ body .search #for-printer #all-products button {
   border: none;
 }
 body .customer-reviews {
-  padding: 1rem 10%;
+  padding: 3rem 10%;
   background-color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .customer-reviews .reviews-text {
+  text-align: center;
+}
+body .customer-reviews .reviews-text h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+body .customer-reviews .reviews-text p {
+  padding: 0 22% 0 22%;
+}
+body .customer-reviews .customer-comments {
+  height: 250px;
+  background-color: white;
+  width: 100%;
+  margin: 1rem 0;
+}
+body .customer-reviews a {
+  text-decoration: none;
+}
+body .customer-reviews button {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid #2392ec;
+  background-color: #EDEDED;
+}
+body .customer-reviews button span {
+  padding-left: 20px;
+  color: #2392ec;
 }
 body .trusted-brand {
   padding: 1.5rem 10%;
