@@ -132,9 +132,9 @@ body {
         @include bgd-property(url("./images/illlustration1.jpeg"));
         align-content: end;
         .arrow{
-            width: 40%;
+            width: 65%;
             margin: 25rem 0 0 0 ;
-            transform: translateX(60vw);
+            text-align: end;
             img{
                 width: 100px;
             }
@@ -172,9 +172,10 @@ body {
     .search{
         @include bgd-property(url("../image/illustration2.png"));
         background-size: contain;
+        background-position: right;
         background-color: $other-color;
         #for-printer{
-            padding: 20px 10%;
+            padding: 30px 10%;
             h2{
                 width: 40%;
                 font-size: $default-font-size*2;
@@ -185,19 +186,39 @@ body {
                 width: 40%;
                 border-radius: $padding*3;
                 margin: 2rem 0 5rem 0;
+                @include flex;
                 input{
-                    width: 80%;
+                    width: 100%;
                     padding: 10px;
                     border: none;
+                    outline: none;
                 }
                 button{
-                    background-color: blue;
-                    padding: 10px;
+                    
+                    background-color: $primary-color;
+                    padding: 15px;
+                    border-radius: 20px;
                     color: white;
-                    border-radius: ;
+                    border: none;
                 }
             }
         }
     }
 
+
+    footer{
+        background-color: $default-color;
+        color: $default-bg-color;
+        padding: 1rem 10%;
+        .company-information { 
+            @include flex();
+            gap: 20px;
+            .company-article{
+                background-color: $other-color;
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
 }
