@@ -7,16 +7,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-//Website Styling
+
+//Website Styling (DESKTOP First)
 body {
     font-size: $default-font-size;
     font-family: $default-font-family;
     font-weight: $default-font-weight;
     background-color: $default-bg-color;
-    max-width: 1750px;
-    min-width: 1450px;
+    max-width: 1920px;
+    min-width: 1440px;
     margin: 0 auto;
-
+    // Navigation
     nav{
         @include flex();
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -73,7 +74,7 @@ body {
                     @include animation1;
                 }
                 i{
-                    padding: 30px 10px;
+                    padding: 23px 10px;
                     
                 }
                 a{
@@ -133,7 +134,7 @@ body {
             }
         }
     }
-
+    // Crazy Bill
     .crazy-bill{
         @include bgd-property(url("./images/illlustration1.jpeg"));
         align-content: end;
@@ -174,7 +175,7 @@ body {
             }
         }
     }
-    
+    // Search for Products
     .search{
         @include bgd-property(url("../image/illustration2.png"));
         background-size: contain;
@@ -210,8 +211,33 @@ body {
             }
         }
     }
-
-
+    // Customer Reviews(What Customer Says about us)
+    .customer-reviews{
+        padding: 1rem 10%;
+        background-color: $default2-color;
+    }
+    // Brand Who Trust Us
+    .trusted-brand{
+        padding: 1.5rem 10%;
+        background-color: $default-bg-color;
+        div{
+            @include flex();
+            align-items: center;
+            align-content: center;
+            color: $primary-color;
+            hr {
+                padding: 3px;
+                border: none;
+                background-color: $default-color;
+                width: 30%;
+            }
+        }
+        img{
+            width: 100%;
+            
+        }
+    }
+    // Footer
     footer{
         background-color: $default-color;
         color: $default-bg-color;
@@ -247,12 +273,13 @@ body {
             }
         }
         .footer-titles{
-            font-size: $default-font-size;
+            font-size: $default-font-size+0.12;
+            margin-bottom: 1rem;
         }
         .company-information { 
             @include flex();
             align-items: start;
-            align-content: start;
+            align-content: center;
             font-size: $default-font-size - 0.15;
             gap: 10px;
             padding: 0px;
@@ -260,23 +287,43 @@ body {
             .company-article{
                 width: 20%;
                 img{
-                    width: 150px;
+                    width: 80%;
                     filter:invert(50);
                 }
+                article{
+                    margin-top: 1.5rem;
+                    text-align: start;
+                }
             }
+            .company-sections{
+                p{
+                    padding: 1.5px;
+                    margin: 0 0 1px 0;
+                }
+                #all-products-footer{
+                    text-decoration: underline;
+                }
+            }
+            .social-media{
+                text-align: center;
+                i{
+                    font-size: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+        .copyright{
+            text-align: center;
+            font-size: 12px;
         }
     }
 }
 
-@media screen and (max-width: 800px) {
-    body{
-        background-color: red;
-
-    }
+// Media query for Mobile Device
+@media (max-width: 770px) and (min-width: 350px) {
+    body{ }
 }
-@media screen and (max-width: 450px) {
-    body{
-        background-color: blue;
-
-    }
+// Media query for tablets
+@media (max-width: 1024px) and (min-width: 771px) {
+    body{ }
 }
