@@ -223,11 +223,42 @@ body .search #for-printer #all-products button {
   border: none;
 }
 body footer {
+  background-color: #000000;
   color: white;
   padding: 1rem 10%;
 }
+body footer a {
+  text-decoration: none;
+  color: white;
+}
 body footer .newsletter {
-  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body footer .newsletter p {
+  font-size: 1.5rem;
+}
+body footer .newsletter form {
+  display: flex;
+  justify-content: center;
+}
+body footer .newsletter form input, body footer .newsletter form button {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+body footer .newsletter form input {
+  border-radius: 20px 0 0 20px;
+  padding-left: 20px;
+  color: #616161;
+}
+body footer .newsletter form button {
+  border-radius: 0 20px 20px 0;
+  background-color: #2392ec;
+  color: #ffffff;
+}
+body footer .footer-titles {
+  font-size: 1rem;
 }
 body footer .company-information {
   display: flex;
@@ -236,11 +267,13 @@ body footer .company-information {
   align-items: center;
   align-items: start;
   align-content: start;
-  gap: 20px;
+  font-size: 0.85rem;
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 body footer .company-information .company-article {
-  background-color: #ff9933;
-  width: 25%;
+  width: 20%;
 }
 body footer .company-information .company-article img {
   width: 150px;

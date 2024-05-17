@@ -213,21 +213,52 @@ body {
 
 
     footer{
-        // background-color: $default-color;
+        background-color: $default-color;
         color: $default-bg-color;
         padding: 1rem 10%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
         .newsletter{
-            margin: 1rem auto;
-            
+            text-align:center;
+            margin-bottom: 2rem;
+            p{
+                font-size: $default-font-size*1.5;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                input,button{
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                }
+                input{
+                    border-radius: 20px 0 0 20px;
+                    padding-left: 20px;
+                    color: $secondary-color;
+                    
+                }button{
+                    border-radius: 0 20px 20px 0;
+                    background-color: $primary-color;
+                    color: $primary-bg-color;
+                }
+            }
+        }
+        .footer-titles{
+            font-size: $default-font-size;
         }
         .company-information { 
             @include flex();
             align-items: start;
             align-content: start;
-            gap: 20px;
+            font-size: $default-font-size - 0.15;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
             .company-article{
-                background-color: $other-color;
-                width: 25%;
+                width: 20%;
                 img{
                     width: 150px;
                     filter:invert(50);
