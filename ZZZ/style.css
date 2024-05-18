@@ -222,6 +222,9 @@ body .search #for-printer #all-products button {
   color: white;
   border: none;
 }
+body .links-to-about-us {
+  padding: 0 10%;
+}
 body .customer-reviews {
   padding: 3rem 10%;
   background-color: #EDEDED;
