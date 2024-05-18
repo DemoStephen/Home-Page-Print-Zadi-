@@ -224,6 +224,20 @@ body .search #for-printer #all-products button {
 }
 body .links-to-about-us {
   padding: 2rem 10%;
+  text-align: center;
+  background-color: white;
+}
+body .links-to-about-us div {
+  width: 100%;
+  height: 250px;
+  background-color: #ff9933;
+  margin-bottom: 2rem;
+}
+body .links-to-about-us button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid #2392ec;
+  background-color: #EDEDED;
 }
 body .customer-reviews {
   padding: 3rem 10%;
@@ -283,7 +297,7 @@ body .trusted-brand div {
 body .trusted-brand div hr {
   padding: 3px;
   border: none;
-  background-color: #000000;
+  background-color: #616161;
   width: 30%;
 }
 body .trusted-brand img {
@@ -304,6 +318,7 @@ body footer .newsletter {
 }
 body footer .newsletter p {
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 body footer .newsletter form {
   display: flex;
@@ -318,6 +333,7 @@ body footer .newsletter form input {
   border-radius: 20px 0 0 20px;
   padding-left: 20px;
   color: #616161;
+  width: 30%;
 }
 body footer .newsletter form button {
   border-radius: 0 20px 20px 0;
@@ -364,6 +380,10 @@ body footer .company-information .social-media {
 body footer .company-information .social-media i {
   font-size: 20px;
   margin: 5px;
+}
+body footer hr {
+  padding: 0rem 10%;
+  margin: 1rem 0;
 }
 body footer .copyright {
   text-align: center;
