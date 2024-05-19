@@ -211,15 +211,26 @@ body {
             }
         }
     }
+    // Quality Print, Production Rate, Fast delivery
+    .three-sections-quality-prints{
+        padding: 3rem 10%;
+        background-color: #F9F9F9;
+        @include flex();
+        .quality-prints{
+            width: 32.5%;
+            background-color: $primary-bg-color;
+            @include flex();
+        }
+    }
     // What our print looks like
     .links-to-about-us{
         padding: 2rem 10%;
         text-align: center;
-        background-color: $default-bg-color;
+        background-color: #F9F9F9;
         div{
             width: 100%;
             height:250px;
-            background-color: $other-color;
+            background-color: white;
             margin-bottom: 2rem;
         }
         button{
