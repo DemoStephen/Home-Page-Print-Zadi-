@@ -222,6 +222,83 @@ body .search #for-printer #all-products button {
   color: white;
   border: none;
 }
+body .products-home-page {
+  padding: 5rem 10%;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .products-home-page .product-category {
+  margin-bottom: 4rem;
+}
+body .products-home-page .product-category .product-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body .products-home-page .product-category .product-title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+body .products-home-page .product-category .product-title span {
+  padding: 5px;
+}
+body .products-home-page .product-category .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  align-content: center;
+}
+body .products-home-page .product-category .product-grid .products {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .products-home-page .product-category .product-grid .products img {
+  width: 100%;
+}
+body .products-home-page .product-category .product-grid .products p {
+  margin: 0 1rem;
+  font-size: 10px;
+}
+body .products-home-page .product-category .product-grid .products .piece {
+  font-size: 15px;
+  margin: 1rem 0 0 1rem;
+}
+body .products-home-page .product-category .product-grid .products .product-name,
+body .products-home-page .product-category .product-grid .products .product-price {
+  font-size: 20px;
+}
+body .products-home-page .product-category .product-grid .products .selecting-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin: 10px 1rem;
+  border-top: 2px solid black;
+}
+body .products-home-page .product-category .product-grid .products .selecting-products button {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+body .products-home-page .see-all-button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid #2392ec;
+  background-color: #EDEDED;
+}
 body .three-sections-quality-prints {
   padding: 3rem 10%;
   background-color: #F9F9F9;

@@ -213,7 +213,66 @@ body {
     }
     // Products in homepage
     .products-home-page{
-        
+        padding: 5rem 10%;
+        background-color: #F2F2F2;
+        @include flex(column);
+        .product-category{
+            margin-bottom: 4rem;
+            .product-title{
+                @include flex();
+                text-align: center;
+                margin-bottom: 1rem;
+                a{
+                    @include flex();
+                    text-decoration: none
+                }
+                span{
+                    padding: 5px;
+                }
+                                
+            }
+            .product-grid{
+                @include grid(repeat(4, 1fr));
+                .products{
+                    background-color: white;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        margin: 0 1rem;
+                        font-size: 10px;
+                    }
+                    .piece{
+                        font-size: 15px;
+                        margin: 1rem 0 0 1rem;
+                    }
+                    .product-name,
+                    .product-price{
+                        font-size: 20px;
+                    }
+                    .selecting-products{
+                        @include flex();
+                        padding-top: 10px;
+                        margin: 10px 1rem;
+                        border-top: 2px solid black;
+                        button{
+                            padding: 10px 20px;
+                            border: none;
+                            background-color: red;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .see-all-button{
+            padding: 10px 30px;
+            border-radius: 50px;
+            border: 2px solid $primary-color;
+            background-color: $default2-color;
+        }
     }
     // Quality Print, Production Rate, Fast delivery
     .three-sections-quality-prints{

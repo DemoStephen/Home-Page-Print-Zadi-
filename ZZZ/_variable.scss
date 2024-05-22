@@ -39,7 +39,13 @@ $padding: 10px;
     // align-content: center;
     align-items: center;
 }
-
+@mixin grid($grid-templates) {
+    display: grid;
+    grid-template-columns: $grid-templates;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+}
 
 //Background Property
 @mixin bgd-property($image:url("#")){
