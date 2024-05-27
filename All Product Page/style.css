@@ -180,6 +180,20 @@ body main {
   color: black;
   padding: 1rem 10%;
   background-color: #EDEDED;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+  height: 100vh;
+}
+body main .categories {
+  width: 25%;
+  background-color: red;
+  overflow-y: scroll;
+}
+body main .expanded-categories {
+  overflow-y: scroll;
+  width: 73%;
+  background-color: red;
 }
 body .trusted-brand {
   padding: 1.5rem 10%;

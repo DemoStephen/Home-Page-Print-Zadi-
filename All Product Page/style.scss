@@ -167,6 +167,20 @@ body {
         color: black;
         padding: 1rem 10%;
         background-color: $default2-color;
+        display: flex;
+        justify-content: space-between;
+        overflow-y: scroll;
+        height: 100vh;
+        .categories{
+            width: 25%;
+            background-color: red;
+            overflow-y: scroll;
+        }
+        .expanded-categories{
+            overflow-y: scroll;
+            width: 73%;
+            background-color: red;
+        }
     }
 
     // Brand Who Trust Us
