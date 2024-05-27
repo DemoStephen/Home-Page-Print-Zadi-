@@ -136,7 +136,7 @@ body {
     }
     // Crazy Bill
     .crazy-bill{
-        @include bgd-property(url("./image/illlustration1.jpeg"));
+        @include bgd-property(url("../image/illlustration1.jpeg"));
         align-content: end;
         .arrow{
             width: 65%;

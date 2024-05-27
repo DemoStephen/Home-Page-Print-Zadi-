@@ -145,7 +145,7 @@ body .crazy-bill {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("./image/illlustration1.jpeg");
+  background-image: url("../image/illlustration1.jpeg");
   align-content: end;
 }
 body .crazy-bill .arrow {
