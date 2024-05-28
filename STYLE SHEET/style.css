@@ -306,6 +306,7 @@ body .three-sections-quality-prints {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  align-items: start;
 }
 body .three-sections-quality-prints .quality-prints {
   width: 32.5%;
@@ -313,6 +314,7 @@ body .three-sections-quality-prints .quality-prints {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
 }
 body .links-to-about-us {
