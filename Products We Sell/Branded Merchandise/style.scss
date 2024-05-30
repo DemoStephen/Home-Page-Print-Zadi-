@@ -142,9 +142,12 @@ body {
         padding: 0 10%;
         @include flex();
         justify-content: space-around;
+        align-items: start;
+        .main-product-image img{
+            width: 100%;
+        }
         section{
             width: 32%;
-            height: 550px;
             background-color: $primary-color;
         }
     }
