@@ -315,7 +315,23 @@ body .three-sections-quality-prints .quality-prints {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
+  align-items: start;
+  gap: 20px;
+  padding: 10px;
+}
+body .three-sections-quality-prints .quality-prints .icons-span {
+  padding: 10px 7px;
+  background-color: #BBDDF9;
+  align-content: center;
+}
+body .three-sections-quality-prints .quality-prints .icons-span span, body .three-sections-quality-prints .quality-prints .icons-span i {
+  color: blue;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+body .three-sections-quality-prints .quality-prints .quality-prints-text p {
+  font-size: 14px;
 }
 body .links-to-about-us {
   padding: 2rem 10%;
@@ -324,9 +340,22 @@ body .links-to-about-us {
 }
 body .links-to-about-us div {
   width: 100%;
-  height: 250px;
   background-color: white;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 20px;
+  margin: 20px 0;
+}
+body .links-to-about-us div img {
+  width: 500px;
+  padding: 20px;
+  background-color: #BBDDF9;
+  border-radius: 20px;
+  margin: 20px 0;
 }
 body .links-to-about-us button {
   padding: 10px 30px;
