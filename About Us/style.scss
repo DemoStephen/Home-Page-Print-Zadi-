@@ -126,112 +126,112 @@ body {
             }
     }
 
-        // Brand Who Trust Us
-        .trusted-brand{
-            padding: 1.5rem 10%;
-            background-color: $default-bg-color;
-            div{
-                @include flex();
-                align-items: center;
-                align-content: center;
-                color: $primary-color;
-                hr {
-                    padding: 3px;
-                    border: none;
-                    background-color: $secondary-bg-color;
-                    width: 30%;
-                }
-            }
-            img{
-                width: 100%;
-                
+    // Brand Who Trust Us
+    .trusted-brand{
+        padding: 1.5rem 10%;
+        background-color: $default-bg-color;
+        div{
+            @include flex();
+            align-items: center;
+            align-content: center;
+            color: $primary-color;
+            hr {
+                padding: 3px;
+                border: none;
+                background-color: $secondary-bg-color;
+                width: 30%;
             }
         }
+        img{
+            width: 100%;
+            
+        }
+    }
     
-        // Footer
-        footer{
-            background-color: $default-color;
-            color: $default-bg-color;
-            padding: 1rem 10%;
-            a{
-                text-decoration: none;
-                color: white;
+    // Footer
+    footer{
+        background-color: $default-color;
+        color: $default-bg-color;
+        padding: 1rem 10%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .newsletter{
+            text-align:center;
+            margin-bottom: 2rem;
+            p{
+                font-size: $default-font-size*1.5;
+                margin-bottom: 10px;
             }
-            .newsletter{
-                text-align:center;
-                margin-bottom: 2rem;
-                p{
-                    font-size: $default-font-size*1.5;
-                    margin-bottom: 10px;
+            form{
+                display: flex;
+                justify-content: center;
+                input,button{
+                    padding: 10px;
+                    border: none;
+                    outline: none;
                 }
-                form{
-                    display: flex;
-                    justify-content: center;
-                    input,button{
-                        padding: 10px;
-                        border: none;
-                        outline: none;
-                    }
-                    input{
-                        border-radius: 20px 0 0 20px;
-                        padding-left: 20px;
-                        color: $secondary-color;
-                        width: 30%;
-                        
-                    }button{
-                        border-radius: 0 20px 20px 0;
-                        background-color: $primary-color;
-                        color: $primary-bg-color;
-                    }
+                input{
+                    border-radius: 20px 0 0 20px;
+                    padding-left: 20px;
+                    color: $secondary-color;
+                    width: 30%;
+                    
+                }button{
+                    border-radius: 0 20px 20px 0;
+                    background-color: $primary-color;
+                    color: $primary-bg-color;
                 }
-            }
-            .footer-titles{
-                font-size: $default-font-size+0.12;
-                margin-bottom: 1rem;
-            }
-            .company-information { 
-                @include flex();
-                align-items: start;
-                align-content: center;
-                font-size: $default-font-size - 0.15;
-                gap: 10px;
-                padding: 0px;
-                margin: 0px;
-                .company-article{
-                    width: 20%;
-                    img{
-                        width: 80%;
-                        filter:invert(50);
-                    }
-                    article{
-                        margin-top: 1.5rem;
-                        text-align: start;
-                    }
-                }
-                .company-sections{
-                    p{
-                        padding: 1.5px;
-                        margin: 0 0 1px 0;
-                    }
-                    #all-products-footer{
-                        text-decoration: underline;
-                    }
-                }
-                .social-media{
-                    text-align: center;
-                    i{
-                        font-size: 20px;
-                        margin: 5px;
-                    }
-                }
-            }
-            hr{
-                padding: 0rem 10%;
-                margin: 1rem 0;
-            }
-            .copyright{
-                text-align: center;
-                font-size: 12px;
             }
         }
+        .footer-titles{
+            font-size: $default-font-size+0.12;
+            margin-bottom: 1rem;
+        }
+        .company-information { 
+            @include flex();
+            align-items: start;
+            align-content: center;
+            font-size: $default-font-size - 0.15;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+            .company-article{
+                width: 20%;
+                img{
+                    width: 80%;
+                    filter:invert(50);
+                }
+                article{
+                    margin-top: 1.5rem;
+                    text-align: start;
+                }
+            }
+            .company-sections{
+                p{
+                    padding: 1.5px;
+                    margin: 0 0 1px 0;
+                }
+                #all-products-footer{
+                    text-decoration: underline;
+                }
+            }
+            .social-media{
+                text-align: center;
+                i{
+                    font-size: 20px;
+                    margin: 5px;
+                }
+            }
+        }
+        hr{
+            padding: 0rem 10%;
+            margin: 1rem 0;
+        }
+        .copyright{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
 }
