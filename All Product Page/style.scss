@@ -175,7 +175,7 @@ body {
         .categories{
             width: 25%;
             // background-color: $primary-color;
-            overflow-y: scroll;
+            overflow: scroll;
             scrollbar-width: none;
             h3{
                 padding: 10px;
@@ -197,7 +197,7 @@ body {
         }
         // Products in Categories
         .expanded-categories{
-            overflow-y: scroll;
+            overflow: scroll;
             width: 73%;
             scrollbar-width: none;
             .design-category{
