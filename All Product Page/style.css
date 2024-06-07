@@ -178,12 +178,12 @@ body .discription a {
 }
 body main {
   color: black;
-  padding: 1rem 10% 3rem 10%;
+  padding: 5rem 10%;
   background-color: #EDEDED;
   display: flex;
   justify-content: space-between;
   overflow-y: scroll;
-  height: 100vh;
+  height: 115vh;
 }
 body main .categories {
   width: 25%;

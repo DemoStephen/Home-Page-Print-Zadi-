@@ -165,12 +165,12 @@ body {
     // Main
     main{
         color: black;
-        padding: 1rem 10% 3rem 10%;
+        padding: 5rem 10%;
         background-color: $default2-color;
         display: flex;
         justify-content: space-between;
         overflow-y: scroll;
-        height: 100vh;
+        height: 115vh;
         // Categories
         .categories{
             width: 25%;
