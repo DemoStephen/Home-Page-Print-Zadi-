@@ -183,11 +183,15 @@ body main {
   display: flex;
   justify-content: space-between;
   overflow-y: scroll;
-  height: 115vh;
+  scrollbar-width: none;
+  --webkit-overflow-y: scroll;
+  height: 870px;
 }
 body main .categories {
   width: 25%;
-  overflow-y: scroll;
+  --webkit-overflow: scroll;
+  --webkit-scrollbar-width: none;
+  overflow: scroll;
   scrollbar-width: none;
 }
 body main .categories h3 {
@@ -208,9 +212,11 @@ body main .categories p {
   margin: 2px;
 }
 body main .expanded-categories {
-  overflow-y: scroll;
+  overflow: scroll;
+  -webkit-overflow: scroll;
   width: 73%;
   scrollbar-width: none;
+  -webkit-scrollbar-width: none;
 }
 body main .expanded-categories .design-category h3 {
   padding: 10px;

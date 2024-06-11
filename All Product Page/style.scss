@@ -170,11 +170,15 @@ body {
         display: flex;
         justify-content: space-between;
         overflow-y: scroll;
-        height: 115vh;
+        scrollbar-width: none;
+        --webkit-overflow-y: scroll;
+        height: 870px;
         // Categories
         .categories{
             width: 25%;
             // background-color: $primary-color;
+            --webkit-overflow: scroll;
+            --webkit-scrollbar-width: none;
             overflow: scroll;
             scrollbar-width: none;
             h3{
@@ -198,15 +202,17 @@ body {
         // Products in Categories
         .expanded-categories{
             overflow: scroll;
+            -webkit-overflow: scroll;
             width: 73%;
             scrollbar-width: none;
+            -webkit-scrollbar-width: none;
             .design-category{
                 h3{
                     padding: 10px;
                     position: sticky;
                     top: 0;
                     background-color: $default2-color;
-
+                    
                 }
                 .grid-product{
                     @include grid(repeat(3, 1fr));

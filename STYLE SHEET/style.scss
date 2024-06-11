@@ -316,6 +316,7 @@ body {
             margin-bottom: 2rem;
             @include flex(row);
             overflow-x: scroll;
+            scrollbar-width: none;
             gap: 20px;
             margin: 20px 0;
 
