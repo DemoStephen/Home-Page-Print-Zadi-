@@ -169,6 +169,8 @@ body main .main-product-image img {
 }
 body main section {
   width: 33%;
+  position: sticky;
+  top: 0;
 }
 body main section h2 {
   margin: 0 0 1rem 0.5rem;
