@@ -242,7 +242,7 @@ body {
                     }
                     p{
                         margin: 0 1rem;
-                        font-size: 10px;
+                        font-size: 13px;
                     }
                     .piece{
                         font-size: 15px;
@@ -272,6 +272,10 @@ body {
             border-radius: 50px;
             border: 2px solid $primary-color;
             background-color: $default2-color;
+            &:hover{
+                background-color: $primary-color;
+                color: $default2-color;
+            }
         }
     }
     // Quality Print, Production Rate, Fast delivery
@@ -319,6 +323,7 @@ body {
             scrollbar-width: none;
             gap: 20px;
             margin: 20px 0;
+            cursor: grabbing;
 
             img{
                 width: 500px;
@@ -329,10 +334,15 @@ body {
             }
         }
         button{
+            // @extend .see-all-button;
             padding: 10px 30px;
             border-radius: 50px;
             border: 2px solid $primary-color;
             background-color: $default2-color;
+            &:hover{
+                background-color: $primary-color;
+                color: $default2-color;
+            }
         }
     }
     
@@ -368,6 +378,13 @@ body {
             border-radius: 50px;
             border: 2px solid $primary-color;
             background-color: $default2-color;
+            &:hover{
+                background-color: $primary-color;
+                color: $default2-color;
+                span{
+                    color: $default-bg-color;
+                }
+            }
             span{
                 padding-left: 20px;
                 color: $primary-color;
