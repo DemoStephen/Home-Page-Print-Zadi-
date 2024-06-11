@@ -148,19 +148,134 @@ body .discription a {
 body main {
   color: black;
   padding: 0 10%;
+  margin: 2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
+  height: 670px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+body main .main-product-image {
+  position: sticky;
+  top: 0;
+  height: 100%;
 }
 body main .main-product-image img {
   width: 100%;
 }
 body main section {
-  width: 32%;
-  background-color: #2392ec;
+  width: 33%;
+}
+body main section h2 {
+  margin: 0 0 1rem 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+body main section form fieldset {
+  border: none;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+body main section form fieldset .default-p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+body main section form fieldset select {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 2px solid #ff9933;
+  outline: none;
+}
+body main section form fieldset .finishing-section #lamination, body main section form fieldset .finishing-section #embossment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+  gap: 5px;
+}
+body main section form fieldset .finishing-section #lamination div, body main section form fieldset .finishing-section #embossment div {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+body main section form fieldset .finishing-section #lamination div:active, body main section form fieldset .finishing-section #embossment div:active {
+  border: 2px solid #ff9933;
+}
+body main section form fieldset .finishing-section #lamination div img, body main section form fieldset .finishing-section #embossment div img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+body main section form fieldset .finishing-section #lamination div p, body main section form fieldset .finishing-section #embossment div p {
+  padding: 0px 5px;
+  font-size: 13px;
+}
+body main section form fieldset .finishing-section #lamination {
+  margin: 0 0 5px 0;
+}
+body main section form fieldset .packaging-option, body main section form fieldset .delivery-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  align-items: start;
+}
+body main section form fieldset .packaging-option div, body main section form fieldset .delivery-option div {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+body main section form fieldset .packaging-option div:active, body main section form fieldset .delivery-option div:active {
+  border: 2px solid #ff9933;
+}
+body main section form fieldset .packaging-option div img, body main section form fieldset .delivery-option div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section form fieldset .delivery-option p {
+  padding: 0px 5px;
+  font-size: 13px;
+}
+body main .card-info {
+  width: 28%;
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(210, 200, 200);
+  position: sticky;
+  top: 1rem;
+}
+body main .card-info div {
+  text-align: center;
+}
+body main .card-info div p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+body main .card-info div button {
+  background-color: #ff0000;
+  width: 80%;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+body main .card-info img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 0 0.5rem 0;
 }
 body .trusted-brand {
   padding: 1.5rem 10%;

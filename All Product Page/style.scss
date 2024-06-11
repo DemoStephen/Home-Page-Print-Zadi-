@@ -181,6 +181,8 @@ body {
             --webkit-scrollbar-width: none;
             overflow: scroll;
             scrollbar-width: none;
+            position: sticky;
+            top: 0;
             h3{
                 padding: 10px;
                 position: sticky;
@@ -212,7 +214,6 @@ body {
                     position: sticky;
                     top: 0;
                     background-color: $default2-color;
-                    
                 }
                 .grid-product{
                     @include grid(repeat(3, 1fr));

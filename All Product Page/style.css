@@ -193,6 +193,8 @@ body main .categories {
   --webkit-scrollbar-width: none;
   overflow: scroll;
   scrollbar-width: none;
+  position: sticky;
+  top: 0;
 }
 body main .categories h3 {
   padding: 10px;
