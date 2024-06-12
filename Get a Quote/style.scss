@@ -126,6 +126,79 @@ body {
             }
     }
 
+    // Main
+    main{
+        padding: 3rem 10%;
+        color: $secondary-color;
+        .appreciation{
+            padding: 30px;
+            background-color: #FFDDBB;
+            border-radius: 5px;
+        }
+        .form{
+            padding: 0 20%;
+            margin: 2rem 0;
+            div{
+                text-align: center;
+            }
+            form{
+                background-color: white;
+                box-shadow: 0px 0px 10px #2392EC1A;
+                margin: 2rem 0;
+                padding: 2rem 4rem;
+                border-radius: 20px;
+                fieldset{
+                    margin: 0 0 2rem 0;
+                    border: none;
+                    p{
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin: 0 0 0.5rem 0;
+                    }
+                    .p-unset{
+                        font-size: 14px;
+                        font-weight: unset;
+                    }
+                    input{
+                        width: 100%;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        border: 2px solid $default2-color;
+                        outline: none;
+                    }
+                }
+                #print-fieldset,#delivery-fieldset{
+                    input{
+                        padding: 15px 15px 70px 15px;
+                        color: black;
+                    }
+                }
+                #radionSection{
+                    input{
+                        width: unset;
+                        padding: unset;
+                        border-radius: unset;
+                    }
+                    label{
+                        margin: 0 2rem 0 0;
+                    }
+                }
+                button{
+                    padding: 10px 30px;
+                    background-color: $primary-color;
+                    color: white;
+                    border: none;
+                    border-radius: 20px;
+                    display: block;
+                    justify-content: end;
+                    span{
+                        margin: 0 0 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+
     // Brand Who Trust Us
     .trusted-brand{
         padding: 1.5rem 10%;

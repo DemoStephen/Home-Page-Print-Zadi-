@@ -135,6 +135,73 @@ body nav #navigation #purple-div .purple-div-bg:hover {
   background-color: #2392ec;
   color: #001234;
 }
+body main {
+  padding: 3rem 10%;
+  color: #616161;
+}
+body main .appreciation {
+  padding: 30px;
+  background-color: #FFDDBB;
+  border-radius: 5px;
+}
+body main .form {
+  padding: 0 20%;
+  margin: 2rem 0;
+}
+body main .form div {
+  text-align: center;
+}
+body main .form form {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(35, 146, 236, 0.1019607843);
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+body main .form form fieldset {
+  margin: 0 0 2rem 0;
+  border: none;
+}
+body main .form form fieldset p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+body main .form form fieldset .p-unset {
+  font-size: 14px;
+  font-weight: unset;
+}
+body main .form form fieldset input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #EDEDED;
+  outline: none;
+}
+body main .form form #print-fieldset input, body main .form form #delivery-fieldset input {
+  padding: 15px 15px 70px 15px;
+  color: black;
+}
+body main .form form #radionSection input {
+  width: unset;
+  padding: unset;
+  border-radius: unset;
+}
+body main .form form #radionSection label {
+  margin: 0 2rem 0 0;
+}
+body main .form form button {
+  padding: 10px 30px;
+  background-color: #2392ec;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  justify-content: end;
+}
+body main .form form button span {
+  margin: 0 0 0 1rem;
+}
 body .trusted-brand {
   padding: 1.5rem 10%;
   background-color: white;
