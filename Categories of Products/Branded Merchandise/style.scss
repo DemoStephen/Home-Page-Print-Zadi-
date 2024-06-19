@@ -166,77 +166,7 @@ body {
                 top: 0;
                 background-color: #fff;
             }
-            form{
-                fieldset{
-                    border: none;
-                    margin: 0 0.5rem 1rem 0.5rem;
-                    .default-p{
-                        margin: 0 0 0.5rem 0;
-                        font-size: 1.3rem;
-                    }
-                    select{
-                        width: 100%;
-                        padding: 7px;
-                        border-radius: 5px;
-                        border: 2px solid $other-color;
-                        outline: none;
-                    }
-                    .finishing-section{
-                        #lamination, #embossment{
-                            @include flex(row);
-                            align-items: start;
-                            gap: 5px;
-                            div{
-                                width: 100%;
-                                border-radius: 5px;
-                                overflow: hidden;
-                                border: 2px solid #fff;
-                                cursor: pointer;
-                                &:active{
-                                border: 2px solid $other-color;
-                                }
-                                img{
-                                    width: 100%;
-                                    margin-bottom: 5px;
-                                    
-                                }
-                                p{
-                                    padding:0px 5px;
-                                    font-size: 13px;
-                                }
-                            }
-                        }
-                        #lamination{
-                            margin: 0 0 5px 0;
-                        }
-                    }
-                    .packaging-option{ 
-                        @include flex();
-                        gap: 5px;
-                        align-items: start;
-                        div{
-                            width: 100%;
-                            border-radius: 5px;
-                            overflow: hidden;
-                            border: 2px solid #fff;
-                            &:active{
-                                border: 2px solid $other-color;
-                            }
-                            img{
-                                width: 100%;
-                                object-fit: cover;
-                            }
-                        }
-                    }
-                    .delivery-option{
-                        @extend .packaging-option;
-                        p{
-                            padding:0px 5px;
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
+
         }
         .card-info{
             width: 28%;
