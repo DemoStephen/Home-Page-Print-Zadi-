@@ -165,74 +165,67 @@ body {
                 background-color: #fff;
             }
             form{
+                padding: 0 0 0.5rem 0;
                 fieldset{
+                    margin: 0 0 1rem 0;
                     border: none;
-                    margin: 0 0.5rem 1rem 0.5rem;
-                    .default-p{
-                        margin: 0 0 0.5rem 0;
-                        font-size: 1.3rem;
+                    .eachField{
+                        font-size: 22px;
+                        display: block;
+                        margin: 0.5rem 0;
                     }
-                    select{
+                    .selectTag{
                         width: 100%;
-                        padding: 7px;
-                        border-radius: 5px;
+                        padding: 10px;
                         border: 2px solid $other-color;
-                        outline: none;
+                        border-radius: 5px;
                     }
-                    .finishing-section{
-                        #lamination, #embossment{
-                            @include flex(row);
-                            align-items: start;
-                            gap: 5px;
-                            div{
-                                width: 100%;
-                                border-radius: 5px;
-                                overflow: hidden;
-                                border: 2px solid #fff;
-                                cursor: pointer;
-                                &:active{
-                                border: 2px solid $other-color;
-                                }
-                                img{
-                                    width: 100%;
-                                    margin-bottom: 5px;
-                                    
-                                }
-                                p{
-                                    padding:0px 5px;
-                                    font-size: 13px;
-                                }
-                            }
-                        }
-                        #lamination{
-                            margin: 0 0 5px 0;
+                    .custom-option{
+                        display: none;
+                        font-size: 12px;
+                        margin: 0.5rem 0 0 0;
+                        input{
+                            padding: 5px;
+                            border: 2px solid $other-color
                         }
                     }
-                    .packaging-option{ 
+                    .image-flex{
                         @include flex();
-                        gap: 5px;
                         align-items: start;
-                        div{
+                        .packaging-option{
+                            display: inline-block;
+                            margin: 0 10px 0 0;
+                            cursor: pointer;
                             width: 100%;
-                            border-radius: 5px;
-                            overflow: hidden;
-                            border: 2px solid #fff;
-                            &:active{
-                                border: 2px solid $other-color;
+                            input[type="radio"]{
+                                display: none;
+                            }
+                            span{
+                                display: block;
+                                font-size: 15px;
                             }
                             img{
+                                border: 2px solid transparent;
                                 width: 100%;
-                                object-fit: cover;
+                                height: 100px;
+                            }
+                            input[type="radio"]:checked + img{
+                                border: 2px solid red;
                             }
                         }
-                    }
-                    .delivery-option{
-                        @extend .packaging-option;
-                        p{
-                            padding:0px 5px;
-                            font-size: 13px;
+                        .deliveryOption,
+                        .finishing-option{
+                            @extend .packaging-option;
                         }
                     }
+                }
+                input[type="button"]{
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: red;
+                    color:white;
                 }
             }
         }

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css" />
     
-    <title>PrintZadi / All Products / Flyers</title>
+    <title>PrintZadi | All Products | Flyers</title>
   </head>
   <body>
     <!-- Navigation -->
@@ -87,113 +87,160 @@
       </section>
       <section class="form">
         <h2>Flyers</h2>
-        <form action="#">
+        <!-- Form -->
+        <form id="optionForm" method="post">
+          <!-- Choose Paper Size -->
+          <fieldset>
+            <label for="paperSize" class="eachField">Choose Paper Size</label>
+            <select name="paperSize" class = "selectTag" id="paperSize"  onchange="toggleCustomOption(this)">
+              <option value="A5">A5(148mm x 210mm)</option>
+              <option value="A4">A4 (210mm x 297mm)</option>
+              <option value="A3">A3 (297mm x 420mm)</option>
+              <option value="A1">A1 (594mm x 841mm)</option>
+              <option value="custom">Other (please specify)</option>
+            </select>
+            <br>
+            <div id="customOptionDiv-paperSize" class="custom-option">
+              <label for="customOption">Specify your Paper Size here</label>
+              <input type="text" id="customOption-card-thickness" name="customOption" required>
+            </div>
+          </fieldset>
+      
+          <!-- Sides -->
+          <fieldset>
+            <label for="sides" class="eachField">How Many Sides</label>
+            <select id="sides" class="selectTag" name="sides" onchange="toggleCustomOption(this)">
+              <option value="2 sides">2-sided print (front & back)</option>
+              <option value="1 side">1-sided print (front)</option>
+              <option value="custom">Other (please specify)</option>
+            </select>
+            <br>
+            <div id="customOptionDiv-sides" class="custom-option">
+              <label for="customOption">Specify your Number of Sides</label>
+              <input type="text" id="customOption-sides" name="customOption" required>
+            </div>
+          </fieldset>
+      
+          <!-- Quantity -->
+          <fieldset>
+            <label for="quantity" class="eachField">Choose your quantity</label>
+            <select id="quantity" class="selectTag" name="quantity" onchange="toggleCustomOption(this)">
+              <option value="100">100 pieces</option>
+              <option value="300">300 pieces</option>
+              <option value="500">500 pieces</option>
+              <option value="1000">1000 pieces</option>
+              <option value="5000">5000 pieces</option>
+              <option value="10000">10000 pieces</option>
+              <option value="custom">Other (please specify)</option>
+            </select>
+            <br>
+            <div id="customOptionDiv-quantity" class="custom-option">
+              <label for="customOption">Specify your Quantity</label>
+              <input type="text" id="customOption-quantity" name="customOption" required>
+            </div>
+          </fieldset>
+      
+          <!-- FInishing -->
+          <fieldset>
+            <label for="finishing" class="eachField">Finishing</label>
+            <div class="image-flex">
+              <label class="finishing-option">
+                <input type="radio" name="finishing" value="matte">
+                <img src="../../image/illlustration1.jpeg" alt="Image 1">
+                <span>Matte Lamination</span>
+              </label>
+              <label class="finishing-option">
+                <input type="radio" name="finishing" value="gloss" checked>
+                <img src="../../image/illlustration1.jpeg" alt="Image 2">
+                <span>Gloss Lamination</span>
+              </label>
+            </div>
+          </fieldset>
+      
+          <!-- Embossment -->
+          <fieldset>
+            <div class="image-flex">
+              <label class="finishing-option">
+                <input type="radio" name="embossment" value="matte">
+                <img src="../../image/illlustration1.jpeg" alt="Image 1">
+                <span>Embossment on logo alone</span>
+              </label>
+              <label class="finishing-option">
+                <input type="radio" name="embossment" value="gloss" checked>
+                <img src="../../image/illlustration1.jpeg" alt="Image 2">
+                <span>Embossment & spot lamination on logo alone</span>
+              </label>
+              <label class="finishing-option">
+                <input type="radio" name="embossment" value="gloss" checked>
+                <img src="../../image/illlustration1.jpeg" alt="Image 2">
+                <span>Spot lamination on logo alone</span>
+              </label>
+            </div>
+          </fieldset>
+      
+          <!-- Packaging -->
+          <fieldset>
+            <label for="packaging" class="eachField">Packaging</label>
+            <div class="image-flex">
+              <label class="packaging-option">
+                <input type="radio" name="packaging" value="paper">
+                <img src="../../image/illlustration1.jpeg" alt="Image 1">
+                <span>paper packaging</span>
+              </label>
+              <label class="packaging-option">
+                <input type="radio" name="packaging" value="plastic" checked>
+                <img src="../../image/illlustration1.jpeg" alt="Image 2">
+                <span>plastic packaging</span>
+              </label>
+              <label class="packaging-option">
+                <input type="radio" name="packaging" value="carton">
+                <img src="../../image/illlustration1.jpeg" alt="Image 3">
+                <span>carton packaging</span>
+              </label>
+            </div>
+          </fieldset>
+      
           <!-- Choose Card Thickness -->
-          <fieldset class="card-thickness">
-            <p class="default-p">Choose Card Thickness</p>
-            <select id="card-thickness" name="card-thickness">
+          <fieldset>
+            <label for="card-thickness" class="eachField">Choose Card Thickness</label>
+            <select id="card-thickness" class="selectTag" name="card-thickness" onchange="toggleCustomOption(this)">
               <option value="300">300 grammes Art Card</option>
               <option value="400">400 grammes Art Card</option>
               <option value="500">500 grammes Art Card</option>
               <option value="1000">1000 grammes Art Card</option>
               <option value="5000">5000 grammes Art Card</option>
               <option value="10000">10000 grammes Art Card</option>
+              <option value="custom">Other (please specify)</option>
             </select>
-          </fieldset>
-
-          <!-- Choose Paper Size -->
-          <fieldset class="card-size">
-            <p class="default-p">Choose Paper Size</p>
-            <select id="sides" name="sides">
-              <option value="A5">A5(148mm x 210mm)</option>
-              <option value="A4">A4 (210mm x 297mm)</option>
-              <option value="A3">A3 (297mm x 420mm)</option>
-              <option value="A1">A1 (594mm x 841mm)</option>
-            </select>
-          </fieldset>
-
-          <!-- How many sides? -->
-          <fieldset class="card-size">
-            <p class="default-p">How many sides?</p>
-            <select id="sides" name="sides">
-              <option value="2 sides">2-sided print (front & back)</option>
-              <option value="1 side">1-sided print (front)</option>
-            </select>
-          </fieldset>
-
-          <!-- Choose Your Quantity -->
-          <fieldset>
-           <p class="default-p">Choose your quantity?</p>
-           <select name="quantity" id="quantity">
-             <option value="100">100 pieces</option>
-             <option value="300">300 pieces</option>
-             <option value="500">500 pieces</option>
-             <option value="1000">1000 pieces</option>
-             <option value="5000">5000 pieces</option>
-             <option value="10000">10000 pieces</option>
-           </select>
-            
-          </fieldset>
-
-          <!-- Finishing -->
-          <fieldset>
-            <p class="default-p">Finishing</p>
-            <div class="finishing-section">
-              <div id="lamination">
-                <div>
-                  <img src="../../image/illlustration1.jpeg" alt="matte">
-                  <p>Matte Lamination</p>
-                </div>
-                <div>
-                  <img src="../../image/illlustration1.jpeg" alt="gloss">
-                  <p>Gloss Lamination</p>
-                </div>
-              </div>
-              <div id="embossment">
-                <div>
-                  <img src="../../image/illlustration1.jpeg" alt="embossment">
-                  <p>Embossment on logo alone</p>
-                </div>
-                <div>
-                  <img src="../../image/illlustration1.jpeg" alt="embossment">
-                  <p>Embossment & spot lamination on logo alone</p>
-                </div>
-                <div>
-                  <img src="../../image/illlustration1.jpeg" alt="embossment">
-                  <p>Spot lamination on logo alone</p>
-                </div>
-              </div>
+            <br>
+            <div id="customOptionDiv-card-thickness" class="custom-option">
+              <label for="customOption">Specify your Card Thickness</label>
+              <input type="text" id="customOption-card-thickness" name="customOption" required>
             </div>
           </fieldset>
-
-          <!-- Packaging -->
-          <fieldset class="packaging">
-           <p class="default-p">Packaging</p>
-           <div class="packaging-option">
-             <div><img src="../../image/illlustration1.jpeg" alt="paper packaging"></div>
-             <div><img src="../../image/illlustration1.jpeg" alt="plastic packaging"></div>
-             <div><img src="../../image/illlustration1.jpeg" alt="carton packaging"></div>
-           </div>
-          </fieldset>
-
-          <!-- Delivery -->
-          <fieldset class="delivery">
-           <p class="default-p">Delivery</p>
-           <div class="delivery-option">
-             <div>
-               <img src="../../image/illlustration1.jpeg" alt="pick-up">
-               <p>Pickup at our office</p>
-             </div>
-             <div>
-               <img src="../../image/illlustration1.jpeg" alt="regular-delivery">
-               <p>Regular delivery</p>
-             </div>
-             <div>
-               <img src="../../image/illlustration1.jpeg" alt="urgent-delivery">
-               <p>Urgent delivery</p>
-             </div>
-           </div>
-          </fieldset>
+      
+          <!-- Delivery Option -->
+           <fieldset>
+            <label for="deliveryOption" class="eachField">Delivery</label>
+            <div class="image-flex">
+              <label class="deliveryOption">
+                <input type="radio" name="delivery" value="Pickup" checked>
+                <img src="../../image/illlustration1.jpeg" alt="Image 1">
+                <span>Pickup at our office</span>
+              </label>
+              <label class="deliveryOption">
+                <input type="radio" name="delivery" value="regular">
+                <img src="../../image/illlustration1.jpeg" alt="Image 2">
+                <span>Regular delivery</span>
+              </label>
+              <label class="deliveryOption">
+                <input type="radio" name="delivery" value="urgent">
+                <img src="../../image/illlustration1.jpeg" alt="Image 3">
+                <span>Urgent delivery</span>
+              </label>
+            </div>
+           </fieldset>
+           <input type="button" value="Proceed">
         </form>
       </section>
       <section class="card-info">
@@ -297,6 +344,6 @@
         <p>Copyright © 2024 PrintZadi. All rights reserved.</p>
       </section>
     </footer>
-
+    <script src="./script.js"></script>
   </body>
 </html>
