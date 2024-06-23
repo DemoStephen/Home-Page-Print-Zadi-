@@ -178,6 +178,74 @@ body main section h2 {
   top: 0;
   background-color: #fff;
 }
+body main section form {
+  padding: 0 0 0.5rem 0;
+}
+body main section form fieldset {
+  margin: 0 0 1rem 0;
+  border: none;
+}
+body main section form fieldset .eachField {
+  font-size: 22px;
+  display: block;
+  margin: 0.5rem 0;
+}
+body main section form fieldset .selectTag {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff9933;
+  border-radius: 5px;
+}
+body main section form fieldset .custom-option {
+  display: none;
+  font-size: 12px;
+  margin: 0.5rem 0 0 0;
+}
+body main section form fieldset .custom-option input {
+  padding: 5px;
+  border: 2px solid #ff9933;
+}
+body main section form fieldset .image-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+}
+body main section form fieldset .image-flex .packaging-option, body main section form fieldset .image-flex .deliveryOption,
+body main section form fieldset .image-flex .finishing-option {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  width: 100%;
+}
+body main section form fieldset .image-flex .packaging-option input[type=radio], body main section form fieldset .image-flex .deliveryOption input[type=radio],
+body main section form fieldset .image-flex .finishing-option input[type=radio] {
+  display: none;
+}
+body main section form fieldset .image-flex .packaging-option span, body main section form fieldset .image-flex .deliveryOption span,
+body main section form fieldset .image-flex .finishing-option span {
+  display: block;
+  font-size: 15px;
+}
+body main section form fieldset .image-flex .packaging-option img, body main section form fieldset .image-flex .deliveryOption img,
+body main section form fieldset .image-flex .finishing-option img {
+  border: 2px solid transparent;
+  width: 100%;
+  height: 100px;
+}
+body main section form fieldset .image-flex .packaging-option input[type=radio]:checked + img, body main section form fieldset .image-flex .deliveryOption input[type=radio]:checked + img,
+body main section form fieldset .image-flex .finishing-option input[type=radio]:checked + img {
+  border: 2px solid red;
+}
+body main section form input[type=button] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+}
 body main .card-info {
   width: 28%;
   margin: 1rem;

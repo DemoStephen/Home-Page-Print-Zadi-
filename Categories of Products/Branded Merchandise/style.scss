@@ -166,6 +166,70 @@ body {
                 top: 0;
                 background-color: #fff;
             }
+            form{
+                padding: 0 0 0.5rem 0;
+                fieldset{
+                    margin: 0 0 1rem 0;
+                    border: none;
+                    .eachField{
+                        font-size: 22px;
+                        display: block;
+                        margin: 0.5rem 0;
+                    }
+                    .selectTag{
+                        width: 100%;
+                        padding: 10px;
+                        border: 2px solid $other-color;
+                        border-radius: 5px;
+                    }
+                    .custom-option{
+                        display: none;
+                        font-size: 12px;
+                        margin: 0.5rem 0 0 0;
+                        input{
+                            padding: 5px;
+                            border: 2px solid $other-color
+                        }
+                    }
+                    .image-flex{
+                        @include flex();
+                        align-items: start;
+                        .packaging-option{
+                            display: inline-block;
+                            margin: 0 10px 0 0;
+                            cursor: pointer;
+                            width: 100%;
+                            input[type="radio"]{
+                                display: none;
+                            }
+                            span{
+                                display: block;
+                                font-size: 15px;
+                            }
+                            img{
+                                border: 2px solid transparent;
+                                width: 100%;
+                                height: 100px;
+                            }
+                            input[type="radio"]:checked + img{
+                                border: 2px solid red;
+                            }
+                        }
+                        .deliveryOption,
+                        .finishing-option{
+                            @extend .packaging-option;
+                        }
+                    }
+                }
+                input[type="button"]{
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: red;
+                    color:white;
+                }
+            }
 
         }
         .card-info{
