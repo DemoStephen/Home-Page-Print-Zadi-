@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="./style.css" />
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../image/sign up icon.png" type="image/x-icon">
-
+    <style>
+        textarea{
+            resize:vertical;
+        }
+    </style>
     <title>PrintZadi | Quote</title>
 </head>
 <body>
@@ -87,27 +91,42 @@
             </div>
             <form action="">
                 <fieldset id="fullName-fieldset">
-                    <p>Full Name</p>
-                    <input type="text" name="fullname" id="fullname" placeholder="e.g Adewale Stephen" required>
+                    <label for="fullname">
+                        <span>Full Name</span>
+                        <input type="text" name="fullname" id="fullname" placeholder="e.g Adewale Stephen" required>
+                    </label>
                 </fieldset>
+
                 <fieldset id="phoneNumber-fieldset">
-                    <p>Phone Number</p>
-                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="e.g 0903*******" required>
+                    <label for="phoneNumber">
+                        <span>Phone Number</span>
+                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="e.g 0903*******" required>
+                    </label>
                 </fieldset>
+
                 <fieldset id="email-fieldset">
-                    <p>Email Address</p>
-                    <input type="email" name="email" id="email" placeholder="e.g ade***@gmail.com" required>
+                    <label for="email">
+                        <span>Email Address</span>
+                        <input type="email" name="email" id="email" placeholder="e.g ade***@gmail.com" required>
+                    </label>
                 </fieldset>
+
                 <fieldset id="print-fieldset">
-                    <p>What do you want to print today?</p>
-                    <input type="text" name="print" id="print" placeholder="e.g 2000 A5 Flyers, 100 Jotters(50 pages)" required>
-                    <p class="p-unset">Describe more to the best of our Understanding</p>
+                    <label for="print">
+                        <span>What do you want to print today?</span>
+                        <textarea name="print" id="print" cols="70" rows="4" placeholder="e.g 2000 A5 Flyers, 100 Jotters(50 pages)"></textarea>
+                        <p class="p-unset">Describe more to the best of our Understanding</p>
+                    </label>
                 </fieldset>
+
                 <fieldset id="delivery-fieldset">
-                    <p>Delivery Address</p>
-                    <input type="text" name="Address" id="Address" placeholder="your prefered delivery address" required>
-                    <p class="p-unset">Please Describe more to the best of our Understanding</p>
+                    <label for="Address">
+                        <p>Delivery Address</p>
+                        <textarea name="Address" id="Address" cols="70" rows="4" placeholder="your prefered delivery address"></textarea>
+                        <p class="p-unset">Please Describe more to the best of our Understanding</p>
+                    </label>
                 </fieldset>
+                
                 <fieldset id="radionSection" required>
                     <p>Do you have a Design?</p>
                     <input type="radio" name="design" id="yes" value="yes">
